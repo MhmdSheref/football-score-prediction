@@ -1,0 +1,65 @@
+team 1,team 2,team 1 elo,team 2 elo,win,score advantage
+Russia,Saudi Arabia,1752,1583,1,5
+Egypt,Uruguay,1613,1922,0,-1
+Morocco,Iran,1728,1823,0,-1
+Portugal,Spain,1959,2011,,0
+France,Australia,2092,1736,1,1
+Argentina,Iceland,1920,1668,,0
+Peru,Denmark,1855,1897,0,-1
+Croatia,Nigeria,1924,1712,1,2
+Costa Rica,Serbia,1724,1814,0,-1
+Germany,Mexico,1937,1779,0,-1
+Brazil,Switzerland,2136,1921,,0
+Sweden,South Korea,1850,1778,1,1
+Belgium,Panama,2034,1565,1,3
+Tunisia,England,1646,1959,0,-1
+Colombia,Japan,1960,1730,0,-1
+Poland,Senegal,1751,1755,0,-1
+Russia,Egypt,1752,1613,1,2
+Portugal,Morocco,1959,1728,1,1
+Uruguay,Saudi Arabia,1922,1583,1,1
+Iran,Spain,1823,2011,0,-1
+Denmark,Australia,1897,1736,,0
+France,Peru,2092,1855,1,1
+Argentina,Croatia,1920,1924,0,-3
+Brazil,Costa Rica,2136,1724,1,2
+Nigeria,Iceland,1712,1668,1,2
+Serbia,Switzerland,1814,1921,0,-1
+Belgium,Tunisia,2034,1646,1,3
+South Korea,Mexico,1778,1779,0,-1
+Germany,Sweden,1937,1850,1,1
+England,Panama,1959,1565,1,5
+Japan,Senegal,1730,1755,,0
+Poland,Colombia,1751,1960,0,-3
+Saudi Arabia,Egypt,1583,1613,1,1
+Uruguay,Russia,1922,1752,1,3
+Iran,Portugal,1823,1959,,0
+Spain,Morocco,2011,1728,,0
+Australia,Peru,1736,1855,0,-2
+Denmark,France,1897,2092,,0
+Nigeria,Argentina,1712,1920,0,-1
+Iceland,Croatia,1668,1924,0,-1
+Mexico,Sweden,1779,1850,0,-3
+South Korea,Germany,1778,1937,1,2
+Switzerland,Costa Rica,1921,1724,,0
+Serbia,Brazil,1814,2136,0,-2
+Senegal,Colombia,1755,1960,0,-1
+Japan,Poland,1730,1751,0,-1
+England,Belgium,1959,2034,0,-1
+Panama,Tunisia,1565,1646,0,-1
+France,Argentina,2092,1920,1,1
+Uruguay,Portugal,1922,1959,1,1
+Spain,Russia,2011,1752,,0
+Croatia,Denmark,1924,1897,,0
+Brazil,Mexico,2136,1779,1,2
+Belgium,Japan,2034,1730,1,1
+Sweden,Switzerland,1850,1921,1,1
+Colombia,England,1960,1959,,0
+Uruguay,France,1922,2092,0,-2
+Brazil,Belgium,2136,2034,0,-1
+Sweden,England,1850,1959,0,-2
+Russia,Croatia,1752,1924,,0
+France,Belgium,2092,2034,1,1
+Croatia,England,1924,1959,1,1
+Belgium,England,2034,1959,1,2
+Croatia,France,1924,2092,1,2

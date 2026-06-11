@@ -36,6 +36,9 @@ The Elo-difference model performed slightly better across all three reported
 regression metrics. Its predictions miss the actual goal margin by about
 **1.03 goals on average**, while explaining roughly **33.1%** of the variance.
 
+The estimated function for the Elo-difference model is as follows: score_advantage = 0.004821 * elo_diff + -0.020733
+This can be used to approximate score advantage where every **207.426** point difference in elo correlates to an extra predicted goal advantage.
+
 > These results come from a small dataset covering two World Cups, so they
 > should be treated as an experiment rather than production-level estimates.
 

@@ -1,111 +1,115 @@
-# Football Match Prediction with Elo Ratings
+# Football Match Prediction: Elo, Altitude, and Expected Goals (xG)
 
-This project explores how well international football Elo ratings can predict
-World Cup match outcomes and score margins. It combines match data from the
-2018 and 2022 FIFA World Cups and compares two feature representations:
+This project explores predicting FIFA World Cup match outcomes (win/loss) and score advantages (goal margins) using match data from the 2018 and 2022 World Cups. The project progressed through three distinct phases of feature engineering, data cleaning, and model experimentation.
 
-- **Exact Elo:** uses both teams' Elo ratings as separate features.
-- **Elo difference:** uses `team 1 elo - team 2 elo` as one feature.
+---
 
-The models cover two tasks:
+## Experiment Phases & Results
 
-1. **Win prediction** with logistic regression.
-2. **Score-advantage prediction** with linear regression.
+### 1. First Pass: Baseline Elo Ratings
+Comparing predictions using baseline Elo ratings:
+* **Exact Elo:** Uses both teams' Elo ratings as separate features.
+* **Elo Difference:** Uses `team_1_elo - team_2_elo` as a single feature.
 
-## Results
+| Model | Task | Accuracy / R² | MAE | RMSE |
+| :--- | :--- | :---: | :---: | :---: |
+| **Elo Difference** | Win/Loss (Logistic Regression) | **83.3%** | - | - |
+| **Exact Elo** | Win/Loss (Logistic Regression) | **83.3%** | - | - |
+| **Elo Difference** | Score Advantage (Linear Regression) | **R²: 33.1%** | 1.033 | 1.238 |
+| **Exact Elo** | Score Advantage (Linear Regression) | **R²: 32.4%** | 1.037 | 1.244 |
 
-### Win prediction
+---
 
-| Model | Accuracy |
-| --- | ---: |
-| Elo difference | **83.33%** |
-| Exact Elo ratings | **83.33%** |
+### 2. Second Pass: Feature Engineering (Altitude & Expected Goals)
+We introduced new data points to improve prediction strength:
+* **Open Play Goals:** Adding open play goal counts to the Elo score maintained the win/loss accuracy at **83.3%**.
+* **Team Goal Breakdowns:** Adding averaged-out breakdown of how teams usually score led to a decrease in win/loss accuracy down to **73.3%** (overfitting/noise).
+* **Altitude (Elevation):** Adding the altitude of each team's country of origin.
+  * **Win/Loss Accuracy:** Increased to **86.7%**.
+  * **Score Advantage:** R² improved slightly to **34.2%** (with a slightly lower RMSE and similar MAE).
+* **Expected Goals (xG):** Incorporating expected goals for, against, and difference. 
+  * The most promising single combination was **Elo Difference + xG_For**, yielding **86.7%** win/loss accuracy and a major jump in score prediction to **R²: 41.2%** (MAE: 0.923, RMSE: 1.161).
+* **Combined Model (Elo Diff + Altitude + xG_For):**
+  * **Win/Loss Accuracy:** Remained at **86.7%**.
+  * **Score Advantage:** Improved further to our best baseline R² of **42.7%** (MAE: 0.922, RMSE: 1.146).
 
-Both representations achieved the same reported accuracy. This suggests that
-the relative gap between the teams contains the important signal for this
-linear classification task.
+---
 
-### Score-advantage prediction
+### 3. Third Pass: Data Cleaning (Removing Low-Stakes Group Matches)
+We investigated whether removing matches where the motivation to win was not guaranteed (specifically, the last match in the group stage for teams that might rest players or strategically play for draws/specific bracket slots) improved predictability.
 
-| Model | MAE | RMSE | R^2 |
-| --- | ---: | ---: | ---: |
-| Elo difference | **1.033** | **1.238** | **0.331** |
-| Exact Elo ratings | 1.037 | 1.244 | 0.324 |
+* **Dataset Used:** Matches with these dubious group-stage games removed (`_cleaned.csv` datasets).
+* **Win/Loss Accuracy:** Rose significantly to **89.2%**.
+* **Score Advantage:** Achieved a peak **R² of 44.5%**, though the overall errors increased to **MAE: 1.15** and **RMSE: 1.45** (likely due to a smaller sample size).
 
-The Elo-difference model performed slightly better across all three reported
-regression metrics. Its predictions miss the actual goal margin by about
-**1.03 goals on average**, while explaining roughly **33.1%** of the variance.
+*Note: This clean/all distinction suggests it is worth testing again if we transition to more complex architectures.*
 
-The estimated function for the Elo-difference model is as follows: score_advantage = 0.004821 * elo_diff + -0.020733
-This can be used to approximate score advantage where every **207.426** point difference in elo correlates to an extra predicted goal advantage.
+---
 
-> These results come from a small dataset covering two World Cups, so they
-> should be treated as an experiment rather than production-level estimates.
+## Summary of Metric Progression (Validation Set)
 
-## Visualizations
-
-### Win probability from Elo difference
-
-![Logistic regression win-probability curve](win%20elo%20diff%20curve.png)
-
-### Win-model validation
-
-| Elo difference | Exact Elo ratings |
-| --- | --- |
-| ![Elo-difference win validation](win%20elo%20diff%20valid.png) | ![Exact-Elo win validation](win%20elo%20exact%20valid.png) |
-
-### Score-model fits
-
-| Elo difference | Exact Elo ratings |
-| --- | --- |
-| ![Elo-difference regression line](score%20elo%20diff%20line.png) | ![Exact-Elo regression plane](score%20elo%20exact%20plane.png) |
-
-### Score-model validation
-
-| Elo difference | Exact Elo ratings |
-| --- | --- |
-| ![Elo-difference score validation](score%20elo%20diff%20valid.png) | ![Exact-Elo score validation](score%20elo%20exact%20valid.png) |
-
-## Method
-
-The scripts:
-
-1. Combine `2018.csv` and `2022.csv`.
-2. Remove rows missing the required target.
-3. Augment the data by reversing each matchup:
-   - Team Elo ratings are swapped, or the Elo difference is negated.
-   - Win labels are inverted.
-   - Score advantages are negated.
-4. Split the augmented data into 70% training, 15% validation, and 15% test
-   sets using `random_state=42`.
-5. Train and evaluate a logistic- or linear-regression model.
-
-## Project Files
-
-| File | Purpose |
-| --- | --- |
-| `2018.csv`, `2022.csv` | World Cup match data and Elo ratings |
-| `win elo diff.py` | Win prediction from Elo difference |
-| `win elo exact.py` | Win prediction from two Elo ratings |
-| `score elo diff.py` | Score-margin prediction from Elo difference |
-| `score elo exact.py` | Score-margin prediction from two Elo ratings |
-| `*.png` | Generated model and validation visualizations |
-
-## Running the Experiments
-
-Install the dependencies:
-
-```bash
-pip install pandas numpy matplotlib scikit-learn
+### Win/Loss Prediction Accuracy
+```
+First Pass (Elo Diff)  [========================] 83.3%
+Second Pass (Elo+Alt)  [==========================] 86.7%
+Second Pass (Elo+xG)   [==========================] 86.7%
+Second Pass (Combined) [==========================] 86.7%
+Third Pass (Cleaned)   [============================] 89.2%
 ```
 
-Run any experiment from the project directory:
-
-```bash
-python "win elo diff.py"
-python "win elo exact.py"
-python "score elo diff.py"
-python "score elo exact.py"
+### Score Advantage Prediction (R² Score)
+```
+First Pass (Elo Diff)  [==================] 33.1%
+Second Pass (Elo+Alt)  [===================] 34.2%
+Second Pass (Elo+xG)   [=======================] 41.2%
+Second Pass (Combined) [========================] 42.7%
+Third Pass (Cleaned)   [==========================] 44.5%
 ```
 
-Each script prints its evaluation metrics and displays the relevant plots.
+---
+
+## Project Structure & Scripts
+
+```
+football-score-prediction/
+├── first_pass/                # Initial baseline Elo rating models
+│   ├── win elo diff.py
+│   ├── win elo exact.py
+│   ├── score elo diff.py
+│   └── score elo exact.py
+│
+├── second_pass/               # Experiments adding altitude & expected goals (xG)
+│   ├── win elo alt.py         # Win/Loss using Elo + Altitude
+│   ├── win elo xg alt.py      # Win/Loss using Elo + xG + Altitude
+│   ├── win xg combinations.py # Script testing combinations of xG features
+│   ├── score elo alt.py       # Score advantage using Elo + Altitude
+│   ├── score elo xg alt.py    # Score advantage using Elo + xG + Altitude
+│   └── score xg combinations.py
+│
+└── third_pass/                # Cleaning matches & introductory ANN models
+    ├── win cleaned.py         # Multi-seed Logistic Regression evaluation on cleaned data
+    ├── win all.py             # Single seed evaluation on cleaned data
+    ├── score cleaned.py       # Linear Regression evaluation on cleaned data
+    ├── win ANN.py             # TensorFlow binary classification ANN sweep
+    └── score ANN.py           # TensorFlow regression ANN sweep
+```
+
+---
+
+## Setup & Running the Scripts
+
+### Dependencies
+Install the required Python packages:
+```bash
+pip install pandas numpy matplotlib scikit-learn tensorflow
+```
+
+### Running Experiments
+Navigate to the desired pass folder and run scripts to evaluate:
+```bash
+# E.g., Running third pass evaluations
+cd third_pass
+python "win cleaned.py"
+python "score cleaned.py"
+python "win ANN.py"
+```

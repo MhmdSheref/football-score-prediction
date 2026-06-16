@@ -220,3 +220,40 @@ for diff in [-400, -200, 0, 200, 400]:
         f"Elo diff {diff:+4d} -> "
         f"{prob:.3f}"
     )
+
+
+
+elo_range = np.linspace(-600, 600, 1000)
+
+elo_curve = 1 / (
+    1 + 10 ** (-elo_range / 400)
+)
+
+lr_curve = model.predict_proba(
+    elo_range.reshape(-1, 1)
+)[:, 1]
+
+plt.figure(figsize=(10,6))
+
+plt.plot(
+    elo_range,
+    elo_curve,
+    label="Standard Elo",
+    linewidth=3
+)
+
+plt.plot(
+    elo_range,
+    lr_curve,
+    label="Learned Logistic",
+    linewidth=3
+)
+
+plt.axvline(0, linestyle="--")
+
+plt.xlabel("Elo Difference")
+plt.ylabel("Win Probability")
+plt.title("Standard Elo vs Learned Logistic")
+
+plt.legend()
+plt.show()

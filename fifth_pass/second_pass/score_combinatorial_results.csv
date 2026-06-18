@@ -1,0 +1,256 @@
+num_features,features,val_mae,val_rmse,val_r2
+2,"xg_for_diff, avg_attend_diff",1.0553972872917474,1.3668577161419042,0.4317133713830711
+3,"xg_for_diff, humid_diff, avg_attend_diff",1.0522439900499487,1.3694101349779562,0.42847009274211145
+3,"xg_for_diff, total_value_diff, avg_attend_diff",1.053905885726798,1.3699020076914465,0.42912392593508486
+3,"xg_for_diff, avg_per_player_diff, avg_attend_diff",1.0539161372834214,1.3699208891546095,0.42911184282653797
+3,"xg_for_diff, alt_diff, avg_attend_diff",1.0596197977363564,1.371092262526392,0.42817214131021514
+3,"elo_diff, xg_for_diff, avg_attend_diff",1.0581262200690265,1.3715668456665826,0.42803149192997
+4,"xg_for_diff, humid_diff, total_value_diff, avg_attend_diff",1.0503848924120651,1.3727828837503007,0.4255571235574744
+4,"xg_for_diff, humid_diff, avg_per_player_diff, avg_attend_diff",1.050389910745009,1.3727981637767734,0.4255475823833354
+4,"elo_diff, xg_for_diff, humid_diff, avg_attend_diff",1.054823443393743,1.3734541472126427,0.4254409215413798
+4,"xg_for_diff, alt_diff, humid_diff, avg_attend_diff",1.0549610053802807,1.3734882743557373,0.42517030490586605
+4,"elo_diff, xg_for_diff, total_value_diff, avg_attend_diff",1.0535169621692948,1.3735180929057913,0.4269060649048605
+4,"elo_diff, xg_for_diff, avg_per_player_diff, avg_attend_diff",1.0535295140372685,1.3735456093967613,0.4268863835616243
+3,"xg_for_diff, avg_age_diff, avg_attend_diff",1.059579970539197,1.3736527097139726,0.4257814794205996
+4,"xg_for_diff, alt_diff, total_value_diff, avg_attend_diff",1.0582217696970224,1.3741498819994815,0.4255610596120073
+4,"xg_for_diff, alt_diff, avg_per_player_diff, avg_attend_diff",1.0582283901774934,1.3741663295053084,0.42555108081983195
+4,"xg_for_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.0601389791824203,1.3745317589014645,0.4251160537961116
+4,"xg_for_diff, humid_diff, avg_age_diff, avg_attend_diff",1.052887185263308,1.375015984690431,0.4235416521326598
+5,"elo_diff, xg_for_diff, humid_diff, total_value_diff, avg_attend_diff",1.0490951734440757,1.3753272063504247,0.4243682648202711
+5,"elo_diff, xg_for_diff, humid_diff, avg_per_player_diff, avg_attend_diff",1.049093663754257,1.3753466427492325,0.4243549727797503
+4,"elo_diff, xg_for_diff, alt_diff, avg_attend_diff",1.0628635205554793,1.3762194054078045,0.424139714356855
+4,"xg_for_diff, avg_age_diff, total_value_diff, avg_attend_diff",1.0568150000555756,1.3762410473287412,0.4237377235293456
+4,"xg_for_diff, avg_age_diff, avg_per_player_diff, avg_attend_diff",1.0568304454934991,1.3762631058148205,0.423722478705327
+5,"xg_for_diff, humid_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.0562773989610248,1.3769099128734916,0.42204729064483265
+5,"xg_for_diff, alt_diff, humid_diff, total_value_diff, avg_attend_diff",1.054535587458937,1.3773395156087884,0.4218994098615749
+5,"xg_for_diff, alt_diff, humid_diff, avg_per_player_diff, avg_attend_diff",1.0545353759891047,1.3773508163779729,0.4218930687754889
+5,"xg_for_diff, humid_diff, avg_age_diff, total_value_diff, avg_attend_diff",1.0485071231252414,1.3776279921805397,0.4214176743166174
+5,"xg_for_diff, humid_diff, avg_age_diff, avg_per_player_diff, avg_attend_diff",1.0485145235966744,1.3776456715560652,0.4214057527425096
+4,"xg_for_diff, alt_diff, avg_age_diff, avg_attend_diff",1.0635605688089045,1.3779148652668802,0.42204908935055935
+5,"elo_diff, xg_for_diff, alt_diff, humid_diff, avg_attend_diff",1.058016302218835,1.377932566818138,0.421802726845983
+4,"elo_diff, xg_for_diff, avg_age_diff, avg_attend_diff",1.0633848971772937,1.378192742061319,0.42235113176776984
+5,"elo_diff, xg_for_diff, alt_diff, total_value_diff, avg_attend_diff",1.058848985224531,1.3783564149138443,0.4228453719917627
+5,"elo_diff, xg_for_diff, alt_diff, avg_per_player_diff, avg_attend_diff",1.05885388655736,1.3783814440330437,0.4228276544990759
+5,"elo_diff, xg_for_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.0602898989179612,1.3786838349084112,0.42237028396949683
+5,"xg_for_diff, alt_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.0643532080840503,1.3789602107160377,0.4213693341204065
+5,"xg_for_diff, alt_diff, humid_diff, avg_age_diff, avg_attend_diff",1.0560540942739918,1.3791708113098595,0.4200089447107733
+5,"elo_diff, xg_for_diff, humid_diff, avg_age_diff, avg_attend_diff",1.0573555284395757,1.3798213910179582,0.4198783971763658
+6,"elo_diff, xg_for_diff, humid_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.054909531260293,1.3798612117650422,0.4204486286834354
+5,"elo_diff, xg_for_diff, avg_age_diff, total_value_diff, avg_attend_diff",1.0593371969875196,1.3802987326260991,0.42107972939049093
+5,"elo_diff, xg_for_diff, avg_age_diff, avg_per_player_diff, avg_attend_diff",1.0593494017756298,1.3803256915672413,0.4210602918487855
+5,"xg_for_diff, alt_diff, avg_age_diff, total_value_diff, avg_attend_diff",1.0601166554926698,1.3803704416512104,0.42012124850646004
+5,"xg_for_diff, alt_diff, avg_age_diff, avg_per_player_diff, avg_attend_diff",1.0601339382966344,1.380391617699786,0.4201065676463114
+5,"xg_for_diff, avg_age_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.0625191807264782,1.3804186195979984,0.4200277987251436
+6,"elo_diff, xg_for_diff, alt_diff, humid_diff, total_value_diff, avg_attend_diff",1.0546197755475997,1.3806967051838326,0.42001072066495787
+6,"elo_diff, xg_for_diff, alt_diff, humid_diff, avg_per_player_diff, avg_attend_diff",1.05460922902914,1.380711253753185,0.42000122538875234
+6,"xg_for_diff, humid_diff, avg_age_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.0541528383559748,1.3815563028426034,0.4179639563555432
+6,"xg_for_diff, alt_diff, humid_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.0601896040881262,1.3818016180067523,0.4180961924554679
+6,"elo_diff, xg_for_diff, humid_diff, avg_age_diff, total_value_diff, avg_attend_diff",1.0524405246591806,1.3820929006173552,0.41844411210249405
+6,"elo_diff, xg_for_diff, humid_diff, avg_age_diff, avg_per_player_diff, avg_attend_diff",1.0524405973336495,1.3821132616643839,0.4184298708871886
+6,"xg_for_diff, alt_diff, humid_diff, avg_age_diff, total_value_diff, avg_attend_diff",1.0526920472083006,1.3821390535701394,0.41761852062620547
+6,"xg_for_diff, alt_diff, humid_diff, avg_age_diff, avg_per_player_diff, avg_attend_diff",1.0526959569550989,1.3821538193302405,0.4176088232140603
+5,"elo_diff, xg_for_diff, alt_diff, avg_age_diff, avg_attend_diff",1.0674226766848611,1.3825109916725757,0.41858408738518504
+6,"elo_diff, xg_for_diff, alt_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.0655773280961631,1.3835484058482796,0.4182614896052539
+6,"elo_diff, xg_for_diff, alt_diff, humid_diff, avg_age_diff, avg_attend_diff",1.0604706738641076,1.3840062232369192,0.41632559324993323
+6,"xg_for_diff, alt_diff, avg_age_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.0655804149543635,1.3843905567069132,0.4165267621324704
+6,"elo_diff, xg_for_diff, alt_diff, avg_age_diff, total_value_diff, avg_attend_diff",1.0636025822946933,1.3847759523705507,0.4171752311865538
+6,"elo_diff, xg_for_diff, alt_diff, avg_age_diff, avg_per_player_diff, avg_attend_diff",1.0636132845402608,1.3848012370462834,0.4171569683779026
+6,"elo_diff, xg_for_diff, avg_age_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.0656235907298062,1.3849867523477801,0.4169181940346913
+7,"elo_diff, xg_for_diff, alt_diff, humid_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.0602909077290024,1.3854276485467454,0.4159168569452689
+2,"elo_diff, avg_attend_diff",1.0514275957698793,1.386120249290758,0.41789933467884766
+7,"xg_for_diff, alt_diff, humid_diff, avg_age_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.0580425884488465,1.3861526291750814,0.4140792107637901
+7,"elo_diff, xg_for_diff, humid_diff, avg_age_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.05807883084417,1.3863658583591134,0.4146762663745408
+7,"elo_diff, xg_for_diff, alt_diff, humid_diff, avg_age_diff, total_value_diff, avg_attend_diff",1.0573883577724255,1.387011687036495,0.4143110654964333
+7,"elo_diff, xg_for_diff, alt_diff, humid_diff, avg_age_diff, avg_per_player_diff, avg_attend_diff",1.0573833206547492,1.3870278168335626,0.4143000612463256
+7,"elo_diff, xg_for_diff, alt_diff, avg_age_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.0697002285024149,1.3892640092194233,0.41316194876395707
+3,"elo_diff, humid_diff, avg_attend_diff",1.052155486597309,1.390873142394891,0.4133680491761877
+8,"elo_diff, xg_for_diff, alt_diff, humid_diff, avg_age_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.0629888687711286,1.3913023479959075,0.4105074054565025
+3,"elo_diff, avg_age_diff, avg_attend_diff",1.0564170876755135,1.3915075109400619,0.41298508052258304
+3,"elo_diff, alt_diff, avg_attend_diff",1.0528845108371345,1.3916073986192072,0.4132483301704531
+3,"elo_diff, avg_per_player_diff, avg_attend_diff",1.0629777763899992,1.3946867206781557,0.40980939224944557
+3,"elo_diff, total_value_diff, avg_attend_diff",1.0629646365118892,1.394687412742231,0.40980559278652173
+4,"elo_diff, alt_diff, humid_diff, avg_attend_diff",1.0503056157581414,1.395969919487322,0.4089958352998838
+4,"elo_diff, alt_diff, avg_age_diff, avg_attend_diff",1.0569812968899646,1.3966700450045209,0.4085173974266015
+4,"elo_diff, humid_diff, avg_age_diff, avg_attend_diff",1.0579642630233448,1.3967786793916317,0.40793838871648735
+4,"elo_diff, humid_diff, avg_per_player_diff, avg_attend_diff",1.0636139707655905,1.3985869509899418,0.4058856191152991
+4,"elo_diff, humid_diff, total_value_diff, avg_attend_diff",1.0636022701562706,1.3985889293338432,0.4058805328276706
+4,"elo_diff, avg_age_diff, avg_per_player_diff, avg_attend_diff",1.0682874759502952,1.4002933228395766,0.404751958205185
+4,"elo_diff, avg_age_diff, total_value_diff, avg_attend_diff",1.068279286768116,1.4002966502699434,0.40474483800029176
+4,"elo_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.0685416298979116,1.4003132622661556,0.40478301697387964
+4,"elo_diff, alt_diff, avg_per_player_diff, avg_attend_diff",1.0652699136100485,1.4013155695307995,0.4041946545094146
+4,"elo_diff, alt_diff, total_value_diff, avg_attend_diff",1.0652620677547482,1.4013192425736472,0.40418852841893155
+5,"elo_diff, alt_diff, humid_diff, avg_age_diff, avg_attend_diff",1.0554034068431402,1.4015044268846102,0.4037869353127017
+2,"avg_per_player_diff, avg_attend_diff",1.0760342211244742,1.4030903024158377,0.401006505504441
+2,"total_value_diff, avg_attend_diff",1.0760172651623459,1.4031131731797544,0.40098331283665795
+5,"elo_diff, humid_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.0681928546662716,1.403486636720545,0.4014854206841866
+5,"elo_diff, alt_diff, humid_diff, avg_per_player_diff, avg_attend_diff",1.0621055301237263,1.4047112527308416,0.400605542901327
+5,"elo_diff, alt_diff, humid_diff, total_value_diff, avg_attend_diff",1.0620916212932738,1.4047155634917947,0.40059836912795066
+5,"elo_diff, humid_diff, avg_age_diff, avg_per_player_diff, avg_attend_diff",1.0695601878952143,1.4048577124915154,0.4001971393853013
+5,"elo_diff, humid_diff, avg_age_diff, total_value_diff, avg_attend_diff",1.0695512048672458,1.404861500309722,0.4001893834656262
+5,"elo_diff, avg_age_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.073593606169123,1.405685842154261,0.3998688856904851
+5,"elo_diff, alt_diff, avg_age_diff, avg_per_player_diff, avg_attend_diff",1.0699386272909381,1.4063930420791366,0.399507012704167
+5,"elo_diff, alt_diff, avg_age_diff, total_value_diff, avg_attend_diff",1.069927706595778,1.4063985570818998,0.3994983043690699
+3,"alt_diff, avg_per_player_diff, avg_attend_diff",1.0748735335141437,1.4075118500917234,0.39744566829902905
+3,"alt_diff, total_value_diff, avg_attend_diff",1.0748663268639624,1.407530447448559,0.3974264508387694
+5,"elo_diff, alt_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.070958182483985,1.4075367932442786,0.39867274874653785
+3,"total_value_diff, avg_per_player_diff, avg_attend_diff",1.081436204632099,1.4084357151642255,0.3962886559672139
+3,"humid_diff, avg_per_player_diff, avg_attend_diff",1.0777789603853143,1.4085284171340018,0.39571460016090837
+3,"humid_diff, total_value_diff, avg_attend_diff",1.0777595769367239,1.40854532712754,0.3956959629437325
+3,"avg_age_diff, avg_per_player_diff, avg_attend_diff",1.0800321465890164,1.4092103202907427,0.39556021922165896
+3,"avg_age_diff, total_value_diff, avg_attend_diff",1.0800174001019074,1.4092323133673221,0.3955366650056122
+6,"elo_diff, humid_diff, avg_age_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.074147476241013,1.409721865629966,0.3957227653614207
+6,"elo_diff, alt_diff, humid_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.0660940426871255,1.4101377881960178,0.39574939973083945
+6,"elo_diff, alt_diff, humid_diff, avg_age_diff, avg_per_player_diff, avg_attend_diff",1.0675371567693897,1.4104506857739403,0.39529389238805446
+6,"elo_diff, alt_diff, humid_diff, avg_age_diff, total_value_diff, avg_attend_diff",1.0675256716718817,1.4104563078760008,0.39528449617172406
+4,"alt_diff, humid_diff, avg_per_player_diff, avg_attend_diff",1.0729902026933225,1.4119978595611196,0.3928058508806746
+4,"alt_diff, humid_diff, total_value_diff, avg_attend_diff",1.0729655196994063,1.4120077818364922,0.39279330523011813
+6,"elo_diff, alt_diff, avg_age_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.0749913839436216,1.4123437000829369,0.39416183376100655
+4,"humid_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.0822334404550251,1.4132287777981,0.39156069694137846
+4,"humid_diff, avg_age_diff, avg_per_player_diff, avg_attend_diff",1.079874266857152,1.4134716657171853,0.3912023471059103
+4,"humid_diff, avg_age_diff, total_value_diff, avg_attend_diff",1.0798607196497028,1.4134889074643637,0.39118259136248557
+4,"alt_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.080355992262363,1.4138300626602873,0.3918990661825676
+4,"alt_diff, avg_age_diff, avg_per_player_diff, avg_attend_diff",1.0801152121211626,1.4139445305549527,0.3915283879224363
+4,"alt_diff, avg_age_diff, total_value_diff, avg_attend_diff",1.0800994832176591,1.4139615912485823,0.3915094466625073
+4,"avg_age_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.0852730943081914,1.4142071024008418,0.39098313600343276
+7,"elo_diff, alt_diff, humid_diff, avg_age_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.071430680961742,1.415820409810946,0.3903584413825535
+4,"elo_diff, xg_for_diff, alt_diff, total_value_diff",1.074543777063056,1.4160065442437277,0.39479981648932544
+4,"elo_diff, xg_for_diff, alt_diff, avg_per_player_diff",1.0745748974843887,1.4160785093768995,0.39474587448473336
+3,"elo_diff, xg_for_diff, total_value_diff",1.073395492596569,1.4172778796460077,0.39488128375481296
+3,"elo_diff, xg_for_diff, avg_per_player_diff",1.073424532216368,1.417334964050269,0.3948377519337429
+5,"alt_diff, humid_diff, avg_age_diff, avg_per_player_diff, avg_attend_diff",1.0770329817963782,1.417417660848107,0.38771690063523256
+5,"alt_diff, humid_diff, avg_age_diff, total_value_diff, avg_attend_diff",1.0770118774403754,1.4174278042315305,0.38770326385966475
+5,"alt_diff, humid_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.077274838571519,1.417549868478509,0.38790066825021347
+5,"humid_diff, avg_age_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.0843680380793508,1.418071598824435,0.3869656872926431
+5,"elo_diff, xg_for_diff, alt_diff, total_value_diff, avg_per_player_diff",1.083531336831807,1.4184295627466361,0.39217421874176794
+5,"alt_diff, avg_age_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.0852113370982928,1.4197910092723822,0.3862249063853891
+4,"elo_diff, xg_for_diff, humid_diff, total_value_diff",1.071679054509293,1.4206838634551144,0.3906011623330379
+4,"elo_diff, xg_for_diff, humid_diff, avg_per_player_diff",1.0716968775307187,1.4207292640078115,0.3905665033639499
+5,"elo_diff, xg_for_diff, alt_diff, humid_diff, total_value_diff",1.0753632182483444,1.4210821227127257,0.38959415553129856
+5,"elo_diff, xg_for_diff, alt_diff, humid_diff, avg_per_player_diff",1.0753754844731285,1.4211395420820652,0.38955073550445796
+4,"elo_diff, xg_for_diff, total_value_diff, avg_per_player_diff",1.0809638685252192,1.4214602846699296,0.39097394900626115
+6,"alt_diff, humid_diff, avg_age_diff, total_value_diff, avg_per_player_diff, avg_attend_diff",1.081136297122348,1.422795562754672,0.3827678432948715
+5,"elo_diff, xg_for_diff, alt_diff, avg_age_diff, total_value_diff",1.0826882883399085,1.4231095695666844,0.38850335055511886
+5,"elo_diff, xg_for_diff, alt_diff, avg_age_diff, avg_per_player_diff",1.0827216517527878,1.423182889817431,0.3884473419258144
+6,"elo_diff, xg_for_diff, alt_diff, humid_diff, total_value_diff, avg_per_player_diff",1.084106891880058,1.423630239633355,0.38704869504510514
+4,"elo_diff, xg_for_diff, avg_age_diff, total_value_diff",1.0820689057635233,1.4240126620342701,0.38899986377601176
+4,"elo_diff, xg_for_diff, avg_age_diff, avg_per_player_diff",1.0820943913184795,1.424069719365697,0.38895565084642103
+6,"elo_diff, xg_for_diff, alt_diff, avg_age_diff, total_value_diff, avg_per_player_diff",1.0896556593533229,1.4245370042988659,0.38679987089981294
+5,"elo_diff, xg_for_diff, humid_diff, total_value_diff, avg_per_player_diff",1.0787795428642548,1.4245852329535393,0.3870707979816968
+1,avg_attend_diff,1.0898260734714549,1.4257634507226618,0.38258569169415013
+5,"elo_diff, xg_for_diff, avg_age_diff, total_value_diff, avg_per_player_diff",1.088498927391058,1.4274467616179998,0.3857924272917809
+5,"elo_diff, xg_for_diff, humid_diff, avg_age_diff, total_value_diff",1.07997468516154,1.428339813265811,0.3839343740913377
+2,"elo_diff, xg_for_diff",1.1040786898725492,1.4283399144190392,0.38502319508507143
+5,"elo_diff, xg_for_diff, humid_diff, avg_age_diff, avg_per_player_diff",1.079991930203244,1.4283874504862732,0.3838970462561502
+6,"elo_diff, xg_for_diff, alt_diff, humid_diff, avg_age_diff, total_value_diff",1.0826242608464087,1.428587821237381,0.38287354067902163
+6,"elo_diff, xg_for_diff, alt_diff, humid_diff, avg_age_diff, avg_per_player_diff",1.08264517236718,1.4286488507677013,0.3828262474465802
+2,"alt_diff, avg_attend_diff",1.0866334412649943,1.4296398323528359,0.379366862934395
+7,"elo_diff, xg_for_diff, alt_diff, humid_diff, avg_age_diff, total_value_diff, avg_per_player_diff",1.0895163077437615,1.4302934982548703,0.3810644249757833
+3,"elo_diff, xg_for_diff, alt_diff",1.106626765641179,1.4305129505710072,0.38240220640112604
+2,"avg_age_diff, avg_attend_diff",1.0895115054140212,1.4309538346571065,0.3775039792740287
+4,"xg_for_diff, alt_diff, total_value_diff, avg_per_player_diff",1.1025456469711779,1.4310726838420942,0.3804029207398003
+3,"xg_for_diff, alt_diff, total_value_diff",1.0968538898759557,1.4313367619766817,0.380758056226205
+3,"xg_for_diff, alt_diff, avg_per_player_diff",1.0969102711652927,1.431395256056297,0.38071402540930904
+6,"elo_diff, xg_for_diff, humid_diff, avg_age_diff, total_value_diff, avg_per_player_diff",1.0862415454104295,1.4316712769233286,0.38090020505129324
+3,"elo_diff, xg_for_diff, humid_diff",1.104039905487657,1.432075435209137,0.3804732704080776
+2,"xg_for_diff, total_value_diff",1.100600022522082,1.432134176289795,0.3811611217535688
+2,"xg_for_diff, avg_per_player_diff",1.100638229817617,1.4321808297162983,0.38112529412107565
+3,"xg_for_diff, total_value_diff, avg_per_player_diff",1.1056294383158345,1.4340047845114259,0.3792192649177549
+2,"humid_diff, avg_attend_diff",1.09659637587003,1.4344247623022037,0.3749350154235588
+5,"xg_for_diff, alt_diff, avg_age_diff, total_value_diff, avg_per_player_diff",1.0983237656856815,1.434519855823047,0.3775364238542876
+1,xg_for_diff,1.113786805666014,1.4347748314000006,0.379051407322217
+3,"elo_diff, xg_for_diff, avg_age_diff",1.1119981692792982,1.4348114898437212,0.37924760099864224
+4,"elo_diff, xg_for_diff, alt_diff, humid_diff",1.1077417539260355,1.4350481162217918,0.37751990845361194
+3,"alt_diff, avg_age_diff, avg_attend_diff",1.089017051190504,1.435432808697013,0.3735210478778701
+4,"xg_for_diff, alt_diff, avg_age_diff, total_value_diff",1.0942990810869608,1.4362619150281208,0.3765678735657211
+2,"xg_for_diff, alt_diff",1.1146225421409062,1.436294614660956,0.3769707053972224
+4,"xg_for_diff, alt_diff, avg_age_diff, avg_per_player_diff",1.0943744534315218,1.4363311336680804,0.3765138681799238
+4,"elo_diff, xg_for_diff, alt_diff, avg_age_diff",1.1142929512822628,1.437242639092772,0.3763001858562637
+3,"humid_diff, avg_age_diff, avg_attend_diff",1.0929877669004997,1.4376594217890422,0.37146408445568796
+3,"alt_diff, humid_diff, avg_attend_diff",1.0903329871755147,1.4379760324306918,0.37184625740141763
+3,"xg_for_diff, humid_diff, total_value_diff",1.1018518370615051,1.4380845036919374,0.3747362244965731
+3,"xg_for_diff, humid_diff, avg_per_player_diff",1.1018882169487234,1.4381251976197824,0.374704391495654
+3,"xg_for_diff, avg_age_diff, total_value_diff",1.101314645288713,1.4383126810227578,0.3760443329393977
+3,"xg_for_diff, avg_age_diff, avg_per_player_diff",1.1013613688750516,1.4383647850225652,0.3760030668175485
+4,"xg_for_diff, alt_diff, humid_diff, total_value_diff",1.100160048625329,1.43860273967656,0.3736409842990996
+4,"xg_for_diff, alt_diff, humid_diff, avg_per_player_diff",1.1002087152310045,1.438652975768011,0.3736022874929196
+5,"xg_for_diff, alt_diff, humid_diff, total_value_diff, avg_per_player_diff",1.1058642680863964,1.4387418755130446,0.37315242043044244
+4,"elo_diff, xg_for_diff, humid_diff, avg_age_diff",1.1116519494240396,1.4392997733865176,0.37408603125553924
+4,"xg_for_diff, avg_age_diff, total_value_diff, avg_per_player_diff",1.1054074435424994,1.4393882678459176,0.3748400113209748
+4,"xg_for_diff, humid_diff, total_value_diff, avg_per_player_diff",1.1067974270375067,1.439978503382595,0.3729183742219802
+2,"xg_for_diff, humid_diff",1.1156545828494935,1.4403576742608006,0.3730156115796438
+6,"xg_for_diff, alt_diff, humid_diff, avg_age_diff, total_value_diff, avg_per_player_diff",1.0980890975307498,1.4406520860075118,0.37152727345167574
+5,"xg_for_diff, alt_diff, humid_diff, avg_age_diff, total_value_diff",1.0930259997208016,1.441668527228835,0.37100167480261803
+2,"xg_for_diff, avg_age_diff",1.1171594474560835,1.4417047340833375,0.3730708226022891
+5,"xg_for_diff, alt_diff, humid_diff, avg_age_diff, avg_per_player_diff",1.0930958393837649,1.441728771861395,0.3709539261664163
+4,"alt_diff, humid_diff, avg_age_diff, avg_attend_diff",1.0895740749671774,1.4419601693276,0.3675620960043814
+5,"elo_diff, xg_for_diff, alt_diff, humid_diff, avg_age_diff",1.1146004194943588,1.4422011045013543,0.371027206705603
+4,"xg_for_diff, humid_diff, avg_age_diff, total_value_diff",1.0972322157253687,1.4424259522753773,0.3711936543890596
+4,"xg_for_diff, humid_diff, avg_age_diff, avg_per_player_diff",1.0972795408720162,1.4424719761982223,0.37115673432241186
+3,"xg_for_diff, alt_diff, humid_diff",1.1173892489478927,1.4426749706714133,0.37057001340188833
+3,"xg_for_diff, alt_diff, avg_age_diff",1.1167287396486454,1.4428407962870458,0.3711598193109003
+5,"xg_for_diff, humid_diff, avg_age_diff, total_value_diff, avg_per_player_diff",1.1016792766993782,1.4437797290694134,0.36986614569837145
+3,"xg_for_diff, humid_diff, avg_age_diff",1.1158619375901866,1.445969798812068,0.36818376019870774
+4,"xg_for_diff, alt_diff, humid_diff, avg_age_diff",1.1165267736348345,1.4478222319879033,0.36595528286131535
+1,elo_diff,1.1045188204602225,1.4794909906908602,0.3471344322880489
+2,"elo_diff, avg_age_diff",1.1180240496074838,1.4807814102419683,0.34457461049595134
+2,"elo_diff, alt_diff",1.1130600304604257,1.483640686274718,0.34262890715609484
+3,"elo_diff, alt_diff, avg_age_diff",1.1263649473788315,1.4860029633932887,0.3391905218323102
+2,"elo_diff, humid_diff",1.1117732595455612,1.4876369706051087,0.33930149246900965
+3,"elo_diff, humid_diff, avg_age_diff",1.1245121421097735,1.4904575364979638,0.33553181228440204
+2,"elo_diff, avg_per_player_diff",1.122935540924983,1.4906546495675173,0.33609926479414276
+2,"elo_diff, total_value_diff",1.1229108400930048,1.4906622984466815,0.3360917077914429
+3,"elo_diff, avg_age_diff, avg_per_player_diff",1.1340303703139845,1.491769409247016,0.33384661727276016
+3,"elo_diff, avg_age_diff, total_value_diff",1.1340113782680605,1.4917763089631264,0.33383925107364065
+3,"elo_diff, alt_diff, humid_diff",1.1198937135864666,1.4922575683178103,0.3346081624504119
+3,"elo_diff, alt_diff, avg_per_player_diff",1.1306799752134002,1.4953097432370452,0.3313502854537392
+3,"elo_diff, alt_diff, total_value_diff",1.1306560610406173,1.495319066420667,0.3313414533962604
+3,"elo_diff, total_value_diff, avg_per_player_diff",1.1310836036681438,1.4954195633749447,0.33140991701796
+4,"elo_diff, alt_diff, humid_diff, avg_age_diff",1.1319556617261974,1.4956335138505272,0.33031509809681014
+4,"elo_diff, avg_age_diff, total_value_diff, avg_per_player_diff",1.1413107376207017,1.4962188838109187,0.32957221937204845
+4,"elo_diff, alt_diff, avg_age_diff, avg_per_player_diff",1.1417076794565242,1.497444562081037,0.3282091059365022
+4,"elo_diff, alt_diff, avg_age_diff, total_value_diff",1.1416936295900821,1.4974530260161891,0.32820062462108696
+3,"elo_diff, humid_diff, avg_per_player_diff",1.1299547640673395,1.498381338933452,0.32847296570665385
+3,"elo_diff, humid_diff, total_value_diff",1.1299311365171696,1.4983909189532414,0.32846376853070663
+4,"elo_diff, alt_diff, total_value_diff, avg_per_player_diff",1.1396292689818825,1.4994519544190412,0.3271357120690888
+4,"elo_diff, humid_diff, avg_age_diff, avg_per_player_diff",1.1398694073815399,1.5012606370799875,0.32482540069274923
+4,"elo_diff, humid_diff, avg_age_diff, total_value_diff",1.1398571751620872,1.501268859842931,0.32481691755312114
+5,"elo_diff, alt_diff, avg_age_diff, total_value_diff, avg_per_player_diff",1.1489960816530438,1.5015335016036226,0.32420565029926557
+4,"elo_diff, humid_diff, total_value_diff, avg_per_player_diff",1.1376367234706593,1.5028569277770396,0.324068961420112
+4,"elo_diff, alt_diff, humid_diff, avg_per_player_diff",1.1369870527271653,1.503619443635136,0.32340458193863614
+4,"elo_diff, alt_diff, humid_diff, total_value_diff",1.1369645189123012,1.5036314887243016,0.3233933926253885
+5,"elo_diff, humid_diff, avg_age_diff, total_value_diff, avg_per_player_diff",1.1468044168105627,1.5055394601324668,0.32064834992250313
+5,"elo_diff, alt_diff, humid_diff, avg_age_diff, avg_per_player_diff",1.1467544716253024,1.5069779142103292,0.3192634491343483
+5,"elo_diff, alt_diff, humid_diff, avg_age_diff, total_value_diff",1.146743644742676,1.5069883721701274,0.3192532072236503
+5,"elo_diff, alt_diff, humid_diff, total_value_diff, avg_per_player_diff",1.1452973696622677,1.5076331042506395,0.3193570030180786
+6,"elo_diff, alt_diff, humid_diff, avg_age_diff, total_value_diff, avg_per_player_diff",1.153731313501631,1.5109728528587971,0.31529840239674223
+1,avg_per_player_diff,1.2386472511717614,1.6048067181724792,0.23075301238487345
+1,total_value_diff,1.2386421501291338,1.6049711418890626,0.23060518461437926
+2,"total_value_diff, avg_per_player_diff",1.246456040430863,1.6058129134575665,0.22916800686159428
+2,"avg_age_diff, avg_per_player_diff",1.2408985097925445,1.609633027442724,0.2264645406916155
+3,"avg_age_diff, total_value_diff, avg_per_player_diff",1.2485950054591244,1.609775147639269,0.22574750643596933
+2,"avg_age_diff, total_value_diff",1.240876641776833,1.6097936881620871,0.22631927422745665
+2,"alt_diff, avg_per_player_diff",1.2434946514818976,1.6111160587131823,0.22446890010167853
+2,"alt_diff, total_value_diff",1.243491136055427,1.6112803131848912,0.22432149650234914
+3,"alt_diff, total_value_diff, avg_per_player_diff",1.251371401717867,1.6123244340409422,0.22272149161742938
+4,"alt_diff, avg_age_diff, total_value_diff, avg_per_player_diff",1.2543956691275036,1.6163473710404153,0.21904204513997835
+3,"alt_diff, avg_age_diff, avg_per_player_diff",1.2464191829418545,1.6165065453736975,0.21943628046220898
+3,"alt_diff, avg_age_diff, total_value_diff",1.2463942764387042,1.6166685465340997,0.21928982845428943
+2,"humid_diff, avg_per_player_diff",1.246815779629098,1.6175360662779972,0.21888524987759245
+2,"humid_diff, total_value_diff",1.2468238916634145,1.6176891167569292,0.21874704833507386
+3,"humid_diff, total_value_diff, avg_per_player_diff",1.2543957625478905,1.6185460621134629,0.21729870506035057
+3,"humid_diff, avg_age_diff, avg_per_player_diff",1.2491750064045704,1.6216543080107448,0.21509693354040235
+3,"humid_diff, avg_age_diff, total_value_diff",1.2491672091594948,1.621805180997101,0.21496020200250499
+4,"humid_diff, avg_age_diff, total_value_diff, avg_per_player_diff",1.2568399933480983,1.6220740517615762,0.21410631757707055
+3,"alt_diff, humid_diff, avg_per_player_diff",1.2511118253291447,1.6236426553166379,0.2126837449030682
+3,"alt_diff, humid_diff, total_value_diff",1.2511158639901077,1.623795292296882,0.21254550550473705
+4,"alt_diff, humid_diff, total_value_diff, avg_per_player_diff",1.258875166208186,1.6247606847699247,0.21105304052770746
+4,"alt_diff, humid_diff, avg_age_diff, avg_per_player_diff",1.2543473658926814,1.6282728451298791,0.20826941796594162
+5,"alt_diff, humid_diff, avg_age_diff, total_value_diff, avg_per_player_diff",1.262146152998085,1.628360744912745,0.20765658587621452
+4,"alt_diff, humid_diff, avg_age_diff, total_value_diff",1.2543451941185086,1.6284245953231573,0.20813131683996222
+2,"alt_diff, avg_age_diff",1.4312789031115982,1.8660104458885665,-0.02456164000653801
+1,avg_age_diff,1.4319109164390336,1.8665765257221136,-0.023753158423730634
+3,"alt_diff, humid_diff, avg_age_diff",1.4377257223345086,1.875409544238527,-0.033472962153520566
+2,"humid_diff, avg_age_diff",1.439123262556617,1.8778031573398841,-0.03461084491384619
+1,alt_diff,1.4547371942569196,1.8893885614610086,-0.05180720494748213
+1,humid_diff,1.4624047760380088,1.892467238987765,-0.051864790506266675
+2,"alt_diff, humid_diff",1.4691602158320745,1.8928073661283857,-0.05354144483300855

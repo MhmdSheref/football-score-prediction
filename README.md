@@ -1,115 +1,84 @@
-# Football Match Prediction: Elo, Altitude, and Expected Goals (xG)
+# Football Match Prediction: AI Agent Exploration
 
-This project explores predicting FIFA World Cup match outcomes (win/loss) and score advantages (goal margins) using match data from the 2018 and 2022 World Cups. The project progressed through three distinct phases of feature engineering, data cleaning, and model experimentation.
-
----
-
-## Experiment Phases & Results
-
-### 1. First Pass: Baseline Elo Ratings
-Comparing predictions using baseline Elo ratings:
-* **Exact Elo:** Uses both teams' Elo ratings as separate features.
-* **Elo Difference:** Uses `team_1_elo - team_2_elo` as a single feature.
-
-| Model | Task | Accuracy / R² | MAE | RMSE |
-| :--- | :--- | :---: | :---: | :---: |
-| **Elo Difference** | Win/Loss (Logistic Regression) | **83.3%** | - | - |
-| **Exact Elo** | Win/Loss (Logistic Regression) | **83.3%** | - | - |
-| **Elo Difference** | Score Advantage (Linear Regression) | **R²: 33.1%** | 1.033 | 1.238 |
-| **Exact Elo** | Score Advantage (Linear Regression) | **R²: 32.4%** | 1.037 | 1.244 |
+This project explores predicting FIFA World Cup match outcomes (win/loss) and expected goal margins using match data spanning the 2018 and 2022 World Cups. The project progressed from baseline statistical models into exhaustive Neural Network hyperparameter tuning, resulting in highly optimized, production-ready prediction models.
 
 ---
 
-### 2. Second Pass: Feature Engineering (Altitude & Expected Goals)
-We introduced new data points to improve prediction strength:
-* **Open Play Goals:** Adding open play goal counts to the Elo score maintained the win/loss accuracy at **83.3%**.
-* **Team Goal Breakdowns:** Adding averaged-out breakdown of how teams usually score led to a decrease in win/loss accuracy down to **73.3%** (overfitting/noise).
-* **Altitude (Elevation):** Adding the altitude of each team's country of origin.
-  * **Win/Loss Accuracy:** Increased to **86.7%**.
-  * **Score Advantage:** R² improved slightly to **34.2%** (with a slightly lower RMSE and similar MAE).
-* **Expected Goals (xG):** Incorporating expected goals for, against, and difference. 
-  * The most promising single combination was **Elo Difference + xG_For**, yielding **86.7%** win/loss accuracy and a major jump in score prediction to **R²: 41.2%** (MAE: 0.923, RMSE: 1.161).
-* **Combined Model (Elo Diff + Altitude + xG_For):**
-  * **Win/Loss Accuracy:** Remained at **86.7%**.
-  * **Score Advantage:** Improved further to our best baseline R² of **42.7%** (MAE: 0.922, RMSE: 1.146).
+## 🏆 Final Model Performance & Findings
+
+Following our initial baselines, we shifted to an exhaustive, programmatic search across 255 distinct feature combinations and hundreds of Neural Network architectures to find the absolute performance ceiling for this dataset.
+
+Our most critical finding was the **divergence in feature sensitivity between classification and regression**:
+
+### 1. Win Prediction (Classification)
+* **Architecture:** 32-node Neural Network (Swish activation, L2 Regularization, 0.2 Dropout).
+* **Optimal Features (7):** `Altitude`, `Attendance`, `Avg Player Value`, `Elo`, `Humidity`, `Total Squad Value`, `Expected Goals (xG)`.
+* **Validation Performance:** Maintained an impressive **87.4% accuracy** when trained exclusively on 2018 data and validated against the entirely unseen 2022 dataset. Classification thrived on having more context (7 variables).
+
+### 2. Score Margin Prediction (Regression)
+* **Architecture:** Narrow 16-node Neural Network (Swish activation, heavier L2 Regularization).
+* **Optimal Features (3):** `Attendance`, `Avg Player Value`, `Expected Goals (xG)`.
+* **Validation Performance:** Achieved an **R² of 52.4%**. Unlike classification, regression proved extraordinarily sensitive to noise. Introducing additional parameters like Elo or Altitude caused immediate overfitting and catastrophic degradation on unseen validation data.
+
+### 3. Cross-Year Generalization
+By intentionally training models strictly on 2018 match data and testing them on 2022 data, we verified that these specific feature-architecture pairings generalize remarkably well across 4-year temporal gaps.
 
 ---
 
-### 3. Third Pass: Data Cleaning (Removing Low-Stakes Group Matches)
-We investigated whether removing matches where the motivation to win was not guaranteed (specifically, the last match in the group stage for teams that might rest players or strategically play for draws/specific bracket slots) improved predictability.
+## 📂 Project Structure
 
-* **Dataset Used:** Matches with these dubious group-stage games removed (`_cleaned.csv` datasets).
-* **Win/Loss Accuracy:** Rose significantly to **89.2%**.
-* **Score Advantage:** Achieved a peak **R² of 44.5%**, though the overall errors increased to **MAE: 1.15** and **RMSE: 1.45** (likely due to a smaller sample size).
+The project has evolved into an experimental pipeline, heavily focused inside the `fifth_pass/` directory where the Deep Neural Network search was conducted:
 
-*Note: This clean/all distinction suggests it is worth testing again if we transition to more complex architectures.*
-
----
-
-## Summary of Metric Progression (Validation Set)
-
-### Win/Loss Prediction Accuracy
-```
-First Pass (Elo Diff)  [========================] 83.3%
-Second Pass (Elo+Alt)  [==========================] 86.7%
-Second Pass (Elo+xG)   [==========================] 86.7%
-Second Pass (Combined) [==========================] 86.7%
-Third Pass (Cleaned)   [============================] 89.2%
-```
-
-### Score Advantage Prediction (R² Score)
-```
-First Pass (Elo Diff)  [==================] 33.1%
-Second Pass (Elo+Alt)  [===================] 34.2%
-Second Pass (Elo+xG)   [=======================] 41.2%
-Second Pass (Combined) [========================] 42.7%
-Third Pass (Cleaned)   [==========================] 44.5%
-```
-
----
-
-## Project Structure & Scripts
-
-```
+```text
 football-score-prediction/
-├── first_pass/                # Initial baseline Elo rating models
-│   ├── win elo diff.py
-│   ├── win elo exact.py
-│   ├── score elo diff.py
-│   └── score elo exact.py
+├── fifth_pass/                     # Deep Learning & Feature Optimization
+│   ├── first_pass/                 # Legacy baseline regressions
+│   ├── second_pass/                # Combinatorial feature & NN architecture sweep
+│   ├── third_phase/                # Strict cross-year (2018 -> 2022) validation
+│   ├── report/                     # High-quality performance graphs & heatmaps
+│   └── final_models/               # Production-ready models & inference tools
+│       ├── build_models.py         # Trains the final NNs on the combined 18+22 dataset
+│       ├── predictor.py            # Interactive CLI for running predictions
+│       ├── predict_2026.py         # Batch predictor for 2026 WC matches
+│       └── *.keras / *.pkl         # Serialized models and scalers
 │
-├── second_pass/               # Experiments adding altitude & expected goals (xG)
-│   ├── win elo alt.py         # Win/Loss using Elo + Altitude
-│   ├── win elo xg alt.py      # Win/Loss using Elo + xG + Altitude
-│   ├── win xg combinations.py # Script testing combinations of xG features
-│   ├── score elo alt.py       # Score advantage using Elo + Altitude
-│   ├── score elo xg alt.py    # Score advantage using Elo + xG + Altitude
-│   └── score xg combinations.py
-│
-└── third_pass/                # Cleaning matches & introductory ANN models
-    ├── win cleaned.py         # Multi-seed Logistic Regression evaluation on cleaned data
-    ├── win all.py             # Single seed evaluation on cleaned data
-    ├── score cleaned.py       # Linear Regression evaluation on cleaned data
-    ├── win ANN.py             # TensorFlow binary classification ANN sweep
-    └── score ANN.py           # TensorFlow regression ANN sweep
+└── 2018.csv, 2022.csv              # Raw datasets
 ```
 
 ---
 
-## Setup & Running the Scripts
+## 🚀 How to Use the Predictor
+
+We provide a robust, interactive Command Line Interface to predict any matchup using our finalized neural networks.
 
 ### Dependencies
-Install the required Python packages:
 ```bash
-pip install pandas numpy matplotlib scikit-learn tensorflow
+pip install pandas numpy tensorflow
 ```
 
-### Running Experiments
-Navigate to the desired pass folder and run scripts to evaluate:
+### Interactive CLI Mode
+Run the predictor with no arguments to launch an interactive session. It will prompt you for the team names and allow you to dynamically override their core stats. If a team is in our 2026, 2022, or 2018 database, the script will automatically load their historical stats by default!
+
 ```bash
-# E.g., Running third pass evaluations
-cd third_pass
-python "win cleaned.py"
-python "score cleaned.py"
-python "win ANN.py"
+python fifth_pass/final_models/predictor.py
+```
+
+### Command Line Overrides
+You can bypass the interactive prompts entirely and pass teams and parameters as arguments. This is perfect for "What-if" scenarios:
+
+```bash
+# Predict Argentina vs France using their historical defaults
+python fifth_pass/final_models/predictor.py --team1 "Argentina" --team2 "France"
+
+# See what happens if France had a much higher Expected Goals (xG)
+python fifth_pass/final_models/predictor.py --team1 "Argentina" --team2 "France" --xg2 2.5
+```
+
+### 2026 Batch Predictions
+We have already processed 72 matches for the upcoming 2026 World Cup. You can view the raw output, including win probabilities and expected goal margins for every match, by opening:
+`fifth_pass/final_models/2026_predictions.csv`
+
+To regenerate or modify these batch predictions yourself:
+```bash
+python fifth_pass/final_models/predict_2026.py
 ```

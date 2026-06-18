@@ -1,0 +1,61 @@
+team 1,team 2,win,score advantage,venue_humid
+Russia,Saudi Arabia,1.0,5,74
+Egypt,Uruguay,0.0,-1,72
+Morocco,Iran,0.0,-1,73
+Portugal,Spain,,0,79
+France,Australia,1.0,1,70
+Argentina,Iceland,,0,74
+Peru,Denmark,0.0,-1,68
+Croatia,Nigeria,1.0,2,78
+Costa Rica,Serbia,0.0,-1,62
+Germany,Mexico,0.0,-1,74
+Brazil,Switzerland,,0,66
+Sweden,South Korea,1.0,1,76
+Belgium,Panama,1.0,3,79
+Tunisia,England,0.0,-1,55
+Colombia,Japan,0.0,-1,68
+Poland,Senegal,0.0,-1,74
+Russia,Egypt,1.0,2,73
+Portugal,Morocco,1.0,1,74
+Uruguay,Saudi Arabia,1.0,1,66
+Iran,Spain,0.0,-1,70
+Denmark,Australia,,0,62
+France,Peru,1.0,1,72
+Argentina,Croatia,0.0,-3,76
+Brazil,Costa Rica,1.0,2,73
+Nigeria,Iceland,1.0,2,55
+Serbia,Switzerland,0.0,-1,78
+Belgium,Tunisia,1.0,3,74
+South Korea,Mexico,0.0,-1,66
+Germany,Sweden,1.0,1,79
+England,Panama,1.0,5,76
+Japan,Senegal,,0,72
+Poland,Colombia,0.0,-3,70
+Saudi Arabia,Egypt,1.0,1,55
+Iran,Portugal,,0,68
+Spain,Morocco,,0,78
+Australia,Peru,0.0,-2,79
+Nigeria,Argentina,0.0,-1,73
+Mexico,Sweden,0.0,-3,72
+South Korea,Germany,1.0,2,70
+Switzerland,Costa Rica,,0,76
+Serbia,Brazil,0.0,-2,74
+Senegal,Colombia,0.0,-1,62
+Japan,Poland,0.0,-1,55
+Panama,Tunisia,0.0,-1,68
+France,Argentina,1.0,1,70
+Uruguay,Portugal,1.0,1,79
+Spain,Russia,,0,74
+Croatia,Denmark,,0,76
+Brazil,Mexico,1.0,2,62
+Belgium,Japan,1.0,1,66
+Sweden,Switzerland,1.0,1,73
+Colombia,England,,0,74
+Uruguay,France,0.0,-2,76
+Brazil,Belgium,0.0,-1,74
+Sweden,England,0.0,-2,62
+Russia,Croatia,,0,79
+France,Belgium,1.0,1,73
+Croatia,England,1.0,1,74
+Belgium,England,1.0,2,73
+Croatia,France,1.0,2,51

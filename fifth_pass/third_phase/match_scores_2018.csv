@@ -1,0 +1,65 @@
+team 1,team 2,score 1,score 2
+Russia,Saudi Arabia,5,0
+Egypt,Uruguay,0,1
+Morocco,Iran,0,1
+Portugal,Spain,3,3
+France,Australia,2,1
+Argentina,Iceland,1,1
+Peru,Denmark,0,1
+Croatia,Nigeria,2,0
+Costa Rica,Serbia,0,1
+Germany,Mexico,0,1
+Brazil,Switzerland,1,1
+Sweden,South Korea,1,0
+Belgium,Panama,3,0
+Tunisia,England,1,2
+Colombia,Japan,1,2
+Poland,Senegal,1,2
+Russia,Egypt,3,1
+Portugal,Morocco,1,0
+Uruguay,Saudi Arabia,1,0
+Iran,Spain,0,1
+Denmark,Australia,1,1
+France,Peru,1,0
+Argentina,Croatia,0,3
+Brazil,Costa Rica,2,0
+Nigeria,Iceland,2,0
+Serbia,Switzerland,1,2
+Belgium,Tunisia,5,2
+South Korea,Mexico,1,2
+Germany,Sweden,2,1
+England,Panama,6,1
+Japan,Senegal,2,2
+Poland,Colombia,0,3
+Saudi Arabia,Egypt,2,1
+Uruguay,Russia,3,0
+Iran,Portugal,1,1
+Spain,Morocco,2,2
+Australia,Peru,0,2
+Denmark,France,0,0
+Nigeria,Argentina,1,2
+Iceland,Croatia,1,2
+Mexico,Sweden,0,3
+South Korea,Germany,2,0
+Switzerland,Costa Rica,2,2
+Serbia,Brazil,0,2
+Senegal,Colombia,0,1
+Japan,Poland,0,1
+England,Belgium,0,1
+Panama,Tunisia,1,2
+France,Argentina,4,3
+Uruguay,Portugal,2,1
+Spain,Russia,1,1
+Croatia,Denmark,1,1
+Brazil,Mexico,2,0
+Belgium,Japan,3,2
+Sweden,Switzerland,1,0
+Colombia,England,1,1
+Uruguay,France,0,2
+Brazil,Belgium,1,2
+Sweden,England,0,2
+Russia,Croatia,2,2
+France,Belgium,1,0
+Croatia,England,2,1
+Belgium,England,2,0
+Croatia,France,4,2

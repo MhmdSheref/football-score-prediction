@@ -1,0 +1,43 @@
+arch,num_features,features,val_accuracy
+Arch1,7,"alt_diff, avg_attend_diff, avg_per_player_diff, elo_diff, humid_diff, total_value_diff, xg_for_diff",0.8740740776062011
+Arch3,7,"alt_diff, avg_age_diff, avg_attend_diff, elo_diff, humid_diff, total_value_diff, xg_for_diff",0.8740740776062011
+Arch3,7,"alt_diff, avg_attend_diff, avg_per_player_diff, elo_diff, humid_diff, total_value_diff, xg_for_diff",0.8740740776062011
+Arch1,7,"alt_diff, avg_age_diff, avg_attend_diff, elo_diff, humid_diff, total_value_diff, xg_for_diff",0.8740740776062011
+Arch3,8,"alt_diff, avg_age_diff, avg_attend_diff, avg_per_player_diff, elo_diff, humid_diff, total_value_diff, xg_for_diff",0.8740740776062011
+Arch3,7,"alt_diff, avg_age_diff, avg_attend_diff, avg_per_player_diff, elo_diff, humid_diff, total_value_diff",0.8740740776062011
+Arch1,5,"avg_age_diff, avg_attend_diff, avg_per_player_diff, humid_diff, xg_for_diff",0.8666666746139526
+Arch1,5,"avg_attend_diff, elo_diff, humid_diff, total_value_diff, xg_for_diff",0.8666666746139526
+Arch1,6,"avg_attend_diff, avg_per_player_diff, elo_diff, humid_diff, total_value_diff, xg_for_diff",0.8666666746139526
+Arch3,6,"avg_attend_diff, avg_per_player_diff, elo_diff, humid_diff, total_value_diff, xg_for_diff",0.8666666746139526
+Arch1,7,"avg_age_diff, avg_attend_diff, avg_per_player_diff, elo_diff, humid_diff, total_value_diff, xg_for_diff",0.8666666746139526
+Arch3,7,"alt_diff, avg_age_diff, avg_attend_diff, avg_per_player_diff, elo_diff, total_value_diff, xg_for_diff",0.8666666746139526
+Arch3,7,"avg_age_diff, avg_attend_diff, avg_per_player_diff, elo_diff, humid_diff, total_value_diff, xg_for_diff",0.8666666746139526
+Arch3,5,"avg_attend_diff, avg_per_player_diff, elo_diff, humid_diff, xg_for_diff",0.8666666746139526
+Arch1,5,"avg_attend_diff, avg_per_player_diff, elo_diff, humid_diff, xg_for_diff",0.8666666746139526
+Arch3,5,"avg_attend_diff, elo_diff, humid_diff, total_value_diff, xg_for_diff",0.8666666746139526
+Arch1,7,"alt_diff, avg_age_diff, avg_attend_diff, avg_per_player_diff, elo_diff, humid_diff, xg_for_diff",0.8666666746139526
+Arch3,5,"avg_age_diff, avg_attend_diff, avg_per_player_diff, humid_diff, xg_for_diff",0.8666666746139526
+Arch1,7,"alt_diff, avg_age_diff, avg_attend_diff, avg_per_player_diff, elo_diff, total_value_diff, xg_for_diff",0.8666666746139526
+Arch1,5,"avg_age_diff, avg_attend_diff, humid_diff, total_value_diff, xg_for_diff",0.8666666746139526
+Arch3,5,"avg_age_diff, avg_attend_diff, humid_diff, total_value_diff, xg_for_diff",0.8666666746139526
+Arch1,7,"alt_diff, avg_age_diff, avg_attend_diff, avg_per_player_diff, elo_diff, humid_diff, total_value_diff",0.8666666746139526
+Arch1,7,"alt_diff, avg_age_diff, avg_attend_diff, avg_per_player_diff, humid_diff, total_value_diff, xg_for_diff",0.8666666746139526
+Arch3,7,"alt_diff, avg_age_diff, avg_attend_diff, avg_per_player_diff, humid_diff, total_value_diff, xg_for_diff",0.8592592716217041
+Arch2,7,"avg_age_diff, avg_attend_diff, avg_per_player_diff, elo_diff, humid_diff, total_value_diff, xg_for_diff",0.8592592716217041
+Arch2,5,"avg_age_diff, avg_attend_diff, avg_per_player_diff, humid_diff, xg_for_diff",0.8518518686294556
+Arch2,5,"avg_attend_diff, avg_per_player_diff, elo_diff, humid_diff, xg_for_diff",0.8518518567085266
+Arch1,8,"alt_diff, avg_age_diff, avg_attend_diff, avg_per_player_diff, elo_diff, humid_diff, total_value_diff, xg_for_diff",0.8370370388031005
+Arch3,7,"alt_diff, avg_age_diff, avg_attend_diff, avg_per_player_diff, elo_diff, humid_diff, xg_for_diff",0.8370370388031005
+Arch2,7,"alt_diff, avg_age_diff, avg_attend_diff, avg_per_player_diff, humid_diff, total_value_diff, xg_for_diff",0.8222222208976746
+Arch2,7,"alt_diff, avg_age_diff, avg_attend_diff, avg_per_player_diff, elo_diff, humid_diff, xg_for_diff",0.8074074149131775
+Arch2,7,"alt_diff, avg_age_diff, avg_attend_diff, avg_per_player_diff, elo_diff, humid_diff, total_value_diff",0.8074074149131775
+Arch2,6,"avg_attend_diff, avg_per_player_diff, elo_diff, humid_diff, total_value_diff, xg_for_diff",0.800000011920929
+Arch1,7,"alt_diff, avg_age_diff, avg_per_player_diff, elo_diff, humid_diff, total_value_diff, xg_for_diff",0.7629629731178283
+Arch2,8,"alt_diff, avg_age_diff, avg_attend_diff, avg_per_player_diff, elo_diff, humid_diff, total_value_diff, xg_for_diff",0.7481481552124023
+Arch2,5,"avg_attend_diff, elo_diff, humid_diff, total_value_diff, xg_for_diff",0.7407407522201538
+Arch2,7,"alt_diff, avg_age_diff, avg_per_player_diff, elo_diff, humid_diff, total_value_diff, xg_for_diff",0.7407407402992249
+Arch2,7,"alt_diff, avg_age_diff, avg_attend_diff, elo_diff, humid_diff, total_value_diff, xg_for_diff",0.7259259343147277
+Arch2,5,"avg_age_diff, avg_attend_diff, humid_diff, total_value_diff, xg_for_diff",0.7185185253620148
+Arch3,7,"alt_diff, avg_age_diff, avg_per_player_diff, elo_diff, humid_diff, total_value_diff, xg_for_diff",0.7185185074806213
+Arch2,7,"alt_diff, avg_attend_diff, avg_per_player_diff, elo_diff, humid_diff, total_value_diff, xg_for_diff",0.7111111223697663
+Arch2,7,"alt_diff, avg_age_diff, avg_attend_diff, avg_per_player_diff, elo_diff, total_value_diff, xg_for_diff",0.6888888955116272

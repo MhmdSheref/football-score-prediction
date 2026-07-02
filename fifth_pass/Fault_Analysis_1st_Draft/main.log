@@ -1,0 +1,645 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.6.25)  25 JUN 2026 18:54
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./main.tex
+(main.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+(article.cls
+Document Class: article 2000/05/19 v1.4b Standard LaTeX document class
+(E:\Programs\MikTeX\tex/latex/base\size10.clo
+File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count275
+\c@section=\count276
+\c@subsection=\count277
+\c@subsubsection=\count278
+\c@paragraph=\count279
+\c@subparagraph=\count280
+\c@figure=\count281
+\c@table=\count282
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+)
+(E:\Programs\MikTeX\tex/latex/graphics\epsfig.sty
+Package: epsfig 2024/01/14 v1.7b (e)psfig emulation (SPQR)
+
+(E:\Programs\MikTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(E:\Programs\MikTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(E:\Programs\MikTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(E:\Programs\MikTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(E:\Programs\MikTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(E:\Programs\MikTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen149
+\Gin@req@width=\dimen150
+)
+\epsfxsize=\dimen151
+\epsfysize=\dimen152
+)
+(E:\Programs\MikTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+
+(E:\Programs\MikTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(E:\Programs\MikTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen153
+\captionmargin=\dimen154
+\caption@leftmargin=\dimen155
+\caption@rightmargin=\dimen156
+\caption@width=\dimen157
+\caption@indent=\dimen158
+\caption@parindent=\dimen159
+\caption@hangindent=\dimen160
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count283
+\c@continuedfloat=\count284
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count285
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count286
+)
+(E:\Programs\MikTeX\tex/latex/tools\calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count287
+\calc@Bcount=\count288
+\calc@Adimen=\dimen161
+\calc@Bdimen=\dimen162
+\calc@Askip=\skip51
+\calc@Bskip=\skip52
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count289
+\calc@Cskip=\skip53
+)
+(E:\Programs\MikTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(E:\Programs\MikTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks18
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(E:\Programs\MikTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(E:\Programs\MikTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen163
+))
+(E:\Programs\MikTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip54
+
+For additional information on amsmath, use the `?' option.
+(E:\Programs\MikTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen164
+)
+(E:\Programs\MikTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count290
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count291
+\leftroot@=\count292
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count293
+\DOTSCASE@=\count294
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen165
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count295
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count296
+\dotsspace@=\muskip17
+\c@parentequation=\count297
+\dspbrk@lvl=\count298
+\tag@help=\toks20
+\row@=\count299
+\column@=\count300
+\maxfields@=\count301
+\andhelp@=\toks21
+\eqnshift@=\dimen166
+\alignsep@=\dimen167
+\tagshift@=\dimen168
+\tagwidth@=\dimen169
+\totwidth@=\dimen170
+\lineht@=\dimen171
+\@envbody=\toks22
+\multlinegap=\skip55
+\multlinetaggap=\skip56
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+)
+(E:\Programs\MikTeX\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks24
+\thm@bodyfont=\toks25
+\thm@headfont=\toks26
+\thm@notefont=\toks27
+\thm@headpunct=\toks28
+\thm@preskip=\skip57
+\thm@postskip=\skip58
+\thm@headsep=\skip59
+\dth@everypar=\toks29
+)
+(E:\Programs\MikTeX\tex/latex/tools\multicol.sty
+Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
+\c@tracingmulticols=\count302
+\mult@box=\box55
+\multicol@leftmargin=\dimen172
+\c@unbalance=\count303
+\c@collectmore=\count304
+\doublecol@number=\count305
+\multicoltolerance=\count306
+\multicolpretolerance=\count307
+\full@width=\dimen173
+\page@free=\dimen174
+\premulticols=\dimen175
+\postmulticols=\dimen176
+\multicolsep=\skip60
+\multicolbaselineskip=\skip61
+\partial@page=\box56
+\last@line=\box57
+\mc@boxedresult=\box58
+\maxbalancingoverflow=\dimen177
+\mult@rightbox=\box59
+\mult@grightbox=\box60
+\mult@firstbox=\box61
+\mult@gfirstbox=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\c@minrows=\count308
+\c@columnbadness=\count309
+\c@finalcolumnbadness=\count310
+\last@try=\dimen178
+\multicolovershoot=\dimen179
+\multicolundershoot=\dimen180
+\mult@nat@firstbox=\box99
+\colbreak@box=\box100
+\mc@col@check@num=\count311
+\g__mc_curr_col_int=\count312
+)
+(E:\Programs\MikTeX\tex/latex/pslatex\pslatex.sty
+Package: pslatex 2021/01/13 v1.3 pslatex emulation (DPC)
+LaTeX Encoding Info:    Redeclaring text command \textsterling (encoding ?) on 
+input line 51.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 66.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ptmcm/m/n on input line 66.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptmcm/m/n on input line 66.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 67.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ptmcm/m/it on input line 67.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ptmcm/m/it on input line 67.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 68.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/pzccm/m/n on input line 68.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/pzccm/m/n on input line 68.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 69.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 69.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 69.
+\symbold=\mathgroup6
+\symitalic=\mathgroup7
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 75.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 75.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 75.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 76.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 76.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 76.
+) (apalike.sty
+\bibhang=\skip62
+)
+(E:\Programs\MikTeX\tex/latex/algorithm2e\algorithm2e.sty
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count313
+
+(E:\Programs\MikTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+\algocf@hangindent=\skip63
+
+(E:\Programs\MikTeX\tex/latex/ifoddpage\ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count314
+)
+(E:\Programs\MikTeX\tex/latex/tools\xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(E:\Programs\MikTeX\tex/latex/relsize\relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\skiptotal=\skip64
+\skiplinenumber=\skip65
+\skiprule=\skip66
+\skiphlne=\skip67
+\skiptext=\skip68
+\skiplength=\skip69
+\algomargin=\skip70
+\skipalgocfslide=\skip71
+\algowidth=\dimen181
+\inoutsize=\dimen182
+\inoutindent=\dimen183
+\interspacetitleruled=\dimen184
+\interspacealgoruled=\dimen185
+\interspacetitleboxruled=\dimen186
+\algocf@ruledwidth=\skip72
+\algocf@inoutbox=\box101
+\algocf@inputbox=\box102
+\AlCapSkip=\skip73
+\AlCapHSkip=\skip74
+\algoskipindent=\skip75
+\algocf@nlbox=\box103
+\algocf@hangingbox=\box104
+\algocf@untilbox=\box105
+\algocf@skipuntil=\skip76
+\algocf@capbox=\box106
+\algocf@lcaptionbox=\skip77
+\algoheightruledefault=\skip78
+\algoheightrule=\skip79
+\algotitleheightruledefault=\skip80
+\algotitleheightrule=\skip81
+\c@algocfline=\count315
+\c@algocfproc=\count316
+\c@algocf=\count317
+\algocf@algoframe=\box107
+\algocf@algobox=\box108
+)
+(E:\Programs\MikTeX\tex/latex/footmisc\footmisc.sty
+Package: footmisc 2025/05/09 v7.0b a miscellany of footnote facilities
+\FN@temptoken=\toks30
+\footnotemargin=\dimen187
+Package footmisc Info: Declaring symbol style bringhurst on input line 549.
+Package footmisc Info: Declaring symbol style chicago on input line 557.
+Package footmisc Info: Declaring symbol style wiley on input line 566.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 577.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 597.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 618
+.
+) (SCITEPRESS.sty
+Conference Style for SCITEPRESS for LaTeX 2e -- version of May 2023
+\titlebox=\skip82
+) (E:\Programs\MikTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen188
+\lightrulewidth=\dimen189
+\cmidrulewidth=\dimen190
+\belowrulesep=\dimen191
+\belowbottomsep=\dimen192
+\aboverulesep=\dimen193
+\abovetopsep=\dimen194
+\cmidrulesep=\dimen195
+\cmidrulekern=\dimen196
+\defaultaddspace=\dimen197
+\@cmidla=\count318
+\@cmidlb=\count319
+\@aboverulesep=\dimen198
+\@belowrulesep=\dimen199
+\@thisruleclass=\count320
+\@lastruleclass=\count321
+\@thisrulewidth=\dimen256
+)
+(E:\Programs\MikTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count322
+\float@exts=\toks31
+\float@box=\box109
+\@float@everytoks=\toks32
+\@floatcapt=\box110
+)
+(E:\Programs\MikTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip83
+\multirow@cntb=\count323
+\multirow@dima=\skip84
+\bigstrutjot=\dimen257
+)
+(E:\Programs\MikTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count324
+) (main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 21.
+LaTeX Font Info:    Trying to load font information for OMS+pzccm on input line
+ 21.
+
+(E:\Programs\MikTeX\tex/latex/psnfss\omspzccm.fd
+File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
+)
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+
+(E:\Programs\MikTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count325
+\scratchdimen=\dimen258
+\scratchbox=\box111
+\nofMPsegments=\count326
+\nofMParguments=\count327
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count328
+\MPscratchDim=\dimen259
+\MPnumerator=\count329
+\makeMPintoPDFobject=\count330
+\everyMPtoPDFconversion=\toks34
+) (E:\Programs\MikTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(E:\Programs\MikTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+
+LaTeX Warning: No \author given.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+
+ []
+
+LaTeX Font Info:    Trying to load font information for OT1+ptmcm on input line
+ 34.
+(E:\Programs\MikTeX\tex/latex/psnfss\ot1ptmcm.fd
+File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
+)
+LaTeX Font Info:    Trying to load font information for OML+ptmcm on input line
+ 34.
+
+(E:\Programs\MikTeX\tex/latex/psnfss\omlptmcm.fd
+File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+psycm on input line
+ 34.
+
+(E:\Programs\MikTeX\tex/latex/psnfss\omxpsycm.fd
+File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
+
+
+(E:\Programs\MikTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
+
+
+(E:\Programs\MikTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
+ [1{C:/Users/MhmdSheref/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{E:/Pr
+ograms/MikTeX/fonts/enc/dvips/base/8r.enc}
+
+
+
+
+] [2]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
+09.
+ (E:\Programs\MikTeX\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+Underfull \hbox (badness 1248) in paragraph at lines 125--129
+\OT1/ptm/m/n/10 search over neu-ral net-work con-fig-u-ra-tions. The
+ []
+
+[3]
+Underfull \hbox (badness 2401) in paragraph at lines 164--168
+\OT1/ptm/m/n/10 The ex-haus-tive search over 255 fea-ture sub-sets
+ []
+
+
+Underfull \hbox (badness 4634) in paragraph at lines 164--168
+\OT1/ptm/m/n/10 re-vealed a pro-nounced di-ver-gence be-tween the
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 164--168
+\OT1/ptm/m/n/10 two tasks. For win clas-si-fi-ca-tion, ac-cu-racy in-
+ []
+
+
+Underfull \hbox (badness 2707) in paragraph at lines 164--168
+\OT1/ptm/m/n/10 creased steadily with fea-ture count, peak-ing at
+ []
+
+
+Underfull \hbox (badness 3375) in paragraph at lines 164--168
+\OT1/ptm/m/n/10 the best lin-ear per-for-mance was ob-tained with
+ []
+
+[4]
+<Figures/win-score_model_arch.png, id=21, 1962.6123pt x 987.4491pt>
+File: Figures/win-score_model_arch.png Graphic file (type png)
+<use Figures/win-score_model_arch.png>
+Package pdftex.def Info: Figures/win-score_model_arch.png  used on input line 2
+27.
+(pdftex.def)             Requested size: 213.41443pt x 107.36916pt.
+
+Underfull \hbox (badness 1609) in paragraph at lines 228--228
+[]\OT1/ptm/m/n/9 Figure 1: |Fi-nal neu-ral net-work ar-chi-tec-tures. \OT1/ptm/
+b/n/9 Left:
+ []
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 287--290
+\OT1/ptm/m/n/10 While a di-rect math-e-mat-i-cal com-par-i-son is con-
+ []
+
+[5 <./Figures/win-score_model_arch.png>]
+<Figures/1_shap_values_merged.png, id=27, 6552.48pt x 5507.57625pt>
+File: Figures/1_shap_values_merged.png Graphic file (type png)
+<use Figures/1_shap_values_merged.png>
+Package pdftex.def Info: Figures/1_shap_values_merged.png  used on input line 3
+05.
+(pdftex.def)             Requested size: 213.41443pt x 179.33867pt.
+<Figures/2_calibration_distribution.png, id=28, 1156.32pt x 505.89pt>
+File: Figures/2_calibration_distribution.png Graphic file (type png)
+<use Figures/2_calibration_distribution.png>
+Package pdftex.def Info: Figures/2_calibration_distribution.png  used on input 
+line 321.
+(pdftex.def)             Requested size: 213.41443pt x 93.36432pt.
+<Figures/3_win_prob_vs_score_diff.png, id=29, 722.7pt x 578.16pt>
+File: Figures/3_win_prob_vs_score_diff.png Graphic file (type png)
+<use Figures/3_win_prob_vs_score_diff.png>
+Package pdftex.def Info: Figures/3_win_prob_vs_score_diff.png  used on input li
+ne 334.
+(pdftex.def)             Requested size: 181.40356pt x 145.12189pt.
+ [6 <./Figures/1_shap_values_merged.png> <./Figures/2_calibration_distribution.
+png>]
+<Figures/4_score_error_graph.png, id=35, 722.7pt x 578.16pt>
+File: Figures/4_score_error_graph.png Graphic file (type png)
+<use Figures/4_score_error_graph.png>
+Package pdftex.def Info: Figures/4_score_error_graph.png  used on input line 35
+2.
+(pdftex.def)             Requested size: 181.40356pt x 145.12189pt.
+<Figures/feature_importance_4models.png, id=36, 1011.78pt x 578.16pt>
+File: Figures/feature_importance_4models.png Graphic file (type png)
+<use Figures/feature_importance_4models.png>
+Package pdftex.def Info: Figures/feature_importance_4models.png  used on input 
+line 368.
+(pdftex.def)             Requested size: 213.41443pt x 121.9465pt.
+ [7 <./Figures/3_win_prob_vs_score_diff.png> <./Figures/4_score_error_graph.png
+> <./Figures/feature_importance_4models.png>]
+<Figures/sensitivity_strong_vs_weak.png, id=44, 1004.553pt x 457.2282pt>
+File: Figures/sensitivity_strong_vs_weak.png Graphic file (type png)
+<use Figures/sensitivity_strong_vs_weak.png>
+Package pdftex.def Info: Figures/sensitivity_strong_vs_weak.png  used on input 
+line 384.
+(pdftex.def)             Requested size: 213.41443pt x 97.13702pt.
+
+Underfull \hbox (badness 1354) in paragraph at lines 389--393
+\OT1/ptm/m/n/10 The at-ten-dance dif-fer-en-tial sweeps win prob-a-bil-
+ []
+
+[8 <./Figures/sensitivity_strong_vs_weak.png>] [9]
+Underfull \hbox (badness 2460) in paragraph at lines 463--469
+\OT1/ptm/m/n/10 the train-ing sam-ple com-prises only 128 unique
+ []
+
+
+Underfull \hbox (badness 1024) in paragraph at lines 477--479
+\OT1/ptm/m/n/10 This pa-per has pre-sented a sys-tem-atic pre-dic-tion
+ []
+
+(main.bbl [10]) [11
+
+] (main.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 6203 strings out of 467866
+ 101050 string characters out of 5430816
+ 519611 words of memory out of 5000000
+ 34980 multiletter control sequences out of 15000+600000
+ 671583 words of font info for 127 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 72i,13n,79p,1475b,404s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<E:/Programs/MikTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/Programs/Mi
+kTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/Programs/MikTeX/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb><E:/Programs/MikTeX/fonts/type1/urw/symbol/usyr.pf
+b><E:/Programs/MikTeX/fonts/type1/urw/times/utmb8a.pfb><E:/Programs/MikTeX/font
+s/type1/urw/times/utmr8a.pfb><E:/Programs/MikTeX/fonts/type1/urw/times/utmri8a.
+pfb>
+Output written on main.pdf (11 pages, 4704018 bytes).
+PDF statistics:
+ 89 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+

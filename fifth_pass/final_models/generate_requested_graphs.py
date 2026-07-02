@@ -11,8 +11,19 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 plt.style.use('default')
 
+plt.rcParams.update({
+    'font.size': 20,
+    'axes.titlesize': 28,
+    'axes.labelsize': 24,
+    'xtick.labelsize': 20,
+    'ytick.labelsize': 20,
+    'legend.fontsize': 20,
+    'figure.titlesize': 32
+})
+
+
 # Output directory
-out_dir = '../report'
+out_dir = '../report/2x'
 os.makedirs(out_dir, exist_ok=True)
 
 def load_data():
@@ -128,18 +139,42 @@ def generate_shap(df, win_model, score_model, win_scaler, score_scaler, win_feat
     
     plt.subplot(2, 2, 1)
     shap.summary_plot(sv_w, X_w_padded, feature_names=all_feats, plot_type='bar', show=False, color='#8C564B', plot_size=None)
+    ax = plt.gca()
+    ax.tick_params(axis='both', labelsize=20)
+    if ax.get_xlabel():
+        ax.set_xlabel(ax.get_xlabel(), fontsize=24)
+    if ax.get_ylabel():
+        ax.set_ylabel(ax.get_ylabel(), fontsize=24)
     plt.title('Win Model Prediction (Classification) - Mean SHAP')
     
     plt.subplot(2, 2, 2)
     shap.summary_plot(sv_w, X_w_padded, feature_names=all_feats, show=False, cmap=brown_cmap, plot_size=None)
+    ax = plt.gca()
+    ax.tick_params(axis='both', labelsize=20)
+    if ax.get_xlabel():
+        ax.set_xlabel(ax.get_xlabel(), fontsize=24)
+    if ax.get_ylabel():
+        ax.set_ylabel(ax.get_ylabel(), fontsize=24)
     plt.title('Win Model - Feature Impact')
     
     plt.subplot(2, 2, 3)
     shap.summary_plot(sv_s, X_s_padded, feature_names=all_feats, plot_type='bar', show=False, color='#8C564B', plot_size=None)
+    ax = plt.gca()
+    ax.tick_params(axis='both', labelsize=20)
+    if ax.get_xlabel():
+        ax.set_xlabel(ax.get_xlabel(), fontsize=24)
+    if ax.get_ylabel():
+        ax.set_ylabel(ax.get_ylabel(), fontsize=24)
     plt.title('Score Model Prediction (Regression) - Mean SHAP')
     
     plt.subplot(2, 2, 4)
     shap.summary_plot(sv_s, X_s_padded, feature_names=all_feats, show=False, cmap=brown_cmap, plot_size=None)
+    ax = plt.gca()
+    ax.tick_params(axis='both', labelsize=20)
+    if ax.get_xlabel():
+        ax.set_xlabel(ax.get_xlabel(), fontsize=24)
+    if ax.get_ylabel():
+        ax.set_ylabel(ax.get_ylabel(), fontsize=24)
     plt.title('Score Model - Feature Impact')
     
     plt.subplots_adjust(wspace=0.8, hspace=0.6, left=0.15, right=0.95, top=0.95, bottom=0.1)
@@ -147,7 +182,7 @@ def generate_shap(df, win_model, score_model, win_scaler, score_scaler, win_feat
     plt.close()
     
     # Reset rcParams
-    plt.rcParams.update(plt.rcParamsDefault)
+    # plt.rcParams.update(plt.rcParamsDefault)
 
 def generate_calibration(df, win_model, score_model, win_scaler, score_scaler, win_feats, score_feats):
     X_win = win_scaler.transform(df[win_feats].values)
@@ -171,7 +206,7 @@ def generate_calibration(df, win_model, score_model, win_scaler, score_scaler, w
     ax1.set_xlabel('Predicted Win Probability')
     ax1.set_xlim([0, 1])
     ax1.set_ylim([0, 1])
-    ax1.set_title('Calibration Curve & Probability Distribution - Win Model')
+    ax1.set_title('Calibration Curve & Probability Distribution - Win Model', fontsize=18)
     
     ax1_twin.hist(y_pred_win, bins=20, alpha=0.3, color='blue')
     ax1_twin.set_ylabel('Frequency')
@@ -194,7 +229,7 @@ def generate_calibration(df, win_model, score_model, win_scaler, score_scaler, w
     
     ax2.set_ylabel('Actual Goal Difference (Mean)')
     ax2.set_xlabel('Predicted Goal Difference')
-    ax2.set_title('Binned Actual vs Predicted & Distribution - Goal Diff Model')
+    ax2.set_title('Binned Actual vs Predicted & Distribution - Goal Diff Model', fontsize=18)
     
     ax2_twin.hist(y_pred_score, bins=20, alpha=0.3, color='red')
     ax2_twin.set_ylabel('Frequency')
@@ -264,18 +299,18 @@ def generate_score_error_graph(df, win_model, score_model, win_scaler, score_sca
     # Plot in three pieces to get the distinct markers, but use the exact same colormap scale
     sc_mid = plt.scatter(y_pred_score[cond_mid], y_pred_win[cond_mid], 
                 c=error[cond_mid], cmap=cmap_rbp, marker='o', alpha=0.8, 
-                vmin=-max_err, vmax=max_err, label='Near Zero Error (|err| <= 1.15)')
+                vmin=-max_err, vmax=max_err, label='Low Error (|err| ≤ 1.15)')
                 
     sc_high = plt.scatter(y_pred_score[cond_high], y_pred_win[cond_high], 
                 c=error[cond_high], cmap=cmap_rbp, marker='s', alpha=0.8, 
-                vmin=-max_err, vmax=max_err, label='Large Positive Error (err > 1.15)')
+                vmin=-max_err, vmax=max_err, label='+High Error (err > 1.15)')
                 
     sc_low = plt.scatter(y_pred_score[cond_low], y_pred_win[cond_low], 
                 c=error[cond_low], cmap=cmap_rbp, marker='x', alpha=0.9, 
-                vmin=-max_err, vmax=max_err, label='Large Negative Error (err < -1.15)')
+                vmin=-max_err, vmax=max_err, label='-High Error (err < -1.15)')
                 
-    # Add colorbar for the gradient (from any of the scatter objects since they share the same scale)
-    plt.colorbar(sc_mid, label='Prediction Error (Real - Predicted)')
+    cbar = plt.colorbar(sc_mid)
+    cbar.set_label('Score Difference Error (Predicted - Actual)')
                 
     plt.axhline(0.5, color='gray', linestyle='--')
     plt.axvline(0, color='gray', linestyle='--')
@@ -283,7 +318,7 @@ def generate_score_error_graph(df, win_model, score_model, win_scaler, score_sca
     plt.xlabel('Predicted Score Difference')
     plt.ylabel('Win Model Probability')
     plt.title('Score Model Error Visualization')
-    plt.legend()
+    plt.legend(loc='upper left')
     plt.grid(True, alpha=0.3)
     
     plt.tight_layout()

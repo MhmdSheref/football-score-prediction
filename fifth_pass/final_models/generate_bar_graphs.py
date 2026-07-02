@@ -1,12 +1,25 @@
 import pandas as pd
 import numpy as np
+
 import matplotlib.pyplot as plt
+
 import seaborn as sns
 import os
 
 plt.style.use('default')
 
-out_dir = '../report'
+plt.rcParams.update({
+    'font.size': 20,
+    'axes.titlesize': 28,
+    'axes.labelsize': 24,
+    'xtick.labelsize': 20,
+    'ytick.labelsize': 20,
+    'legend.fontsize': 20,
+    'figure.titlesize': 32
+})
+
+
+out_dir = '../report/2x'
 os.makedirs(out_dir, exist_ok=True)
 
 features = ['Elo', 'xG_for', 'Alt', 'Humid', 'Avg Age', 'Total Value', 'Avg per Player', 'Avg Attend.']
@@ -65,10 +78,11 @@ def main():
     ax.bar(x + 1.5*width4, [c*100 for c in nn_score_counts], width4, label='NN Score', color='#E15759')
     
     ax.set_ylabel('Inclusion Frequency (%)')
-    ax.set_title('Feature Inclusion Frequency in Top 20 Models (Linear vs Neural Networks)')
+    ax.set_ylim(0, 120)
+    ax.set_title('Feature Inclusion Frequency in Top 20 Models')
     ax.set_xticks(x)
     ax.set_xticklabels(diff_cols, rotation=45, ha='right')
-    ax.legend()
+    ax.legend(loc='upper right')
     
     plt.tight_layout()
     plt.savefig(os.path.join(out_dir, 'feature_importance_4models.png'), dpi=300)

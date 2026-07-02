@@ -177,8 +177,8 @@ def main():
         })
         
     res_df = pd.DataFrame(results)
-    res_df.to_csv('2026_predictions.csv', index=False)
-    print("Successfully predicted 2026 matches and saved to 2026_predictions.csv")
+    res_df.to_csv('2026_predictions_clean.csv', index=False)
+    print("Successfully predicted 2026 matches and saved to 2026_predictions_clean.csv")
 
 if __name__ == "__main__":
     main()

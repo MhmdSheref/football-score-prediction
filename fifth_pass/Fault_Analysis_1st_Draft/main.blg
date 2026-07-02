@@ -1,0 +1,67 @@
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 8 items.
+The style file: apalike.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Database file #1: references.bib
+Warning--empty year in anzer_goal_2021
+Warning--empty journal in anzer_goal_2021
+Warning--empty year in carmo_physical_2026
+Warning--empty journal in carmo_physical_2026
+Warning--empty year in forcher_ai_2025
+Warning--empty journal in forcher_ai_2025
+Warning--empty year in hewitt_machine_2023
+Warning--empty journal in hewitt_machine_2023
+Warning--empty year in mead_expected_2023
+Warning--empty journal in mead_expected_2023
+Warning--empty year in mohr_physiological_2012
+Warning--empty journal in mohr_physiological_2012
+Warning--empty year in pitso_bayesian_2026
+Warning--empty journal in pitso_bayesian_2026
+Warning--empty year in shephard_altitude_2008
+Warning--empty journal in shephard_altitude_2008
+Warning--empty year in tsokos_modeling_2019
+Warning--empty journal in tsokos_modeling_2019
+You've used 11 entries,
+            1935 wiz_defined-function locations,
+            527 strings with 5929 characters,
+and the built_in function-call counts, 5043 in all, are:
+= -- 473
+> -- 246
+< -- 6
++ -- 90
+- -- 86
+* -- 435
+:= -- 860
+add.period$ -- 33
+call.type$ -- 11
+change.case$ -- 98
+chr.to.int$ -- 11
+cite$ -- 29
+duplicate$ -- 176
+empty$ -- 339
+format.name$ -- 101
+if$ -- 975
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 11
+newline$ -- 58
+num.names$ -- 33
+pop$ -- 120
+preamble$ -- 1
+purify$ -- 98
+quote$ -- 0
+skip$ -- 113
+stack$ -- 0
+substring$ -- 370
+swap$ -- 16
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 66
+warning$ -- 18
+while$ -- 40
+width$ -- 0
+write$ -- 127
+(There were 18 warnings)

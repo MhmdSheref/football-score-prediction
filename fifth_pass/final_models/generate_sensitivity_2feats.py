@@ -1,12 +1,25 @@
 import os
 import numpy as np
+
 import matplotlib.pyplot as plt
+
 import tensorflow as tf
 import pickle
 from generate_requested_graphs import load_data
 
+
+plt.rcParams.update({
+    'font.size': 20,
+    'axes.titlesize': 28,
+    'axes.labelsize': 24,
+    'xtick.labelsize': 20,
+    'ytick.labelsize': 20,
+    'legend.fontsize': 20,
+    'figure.titlesize': 32
+})
+
 def main():
-    out_dir = '../report'
+    out_dir = '../report/2x'
     os.makedirs(out_dir, exist_ok=True)
     
     train_df = load_data()
@@ -23,7 +36,7 @@ def main():
     colors = ['#E15759', '#4E79A7']
     
     fig, axes = plt.subplots(1, 2, figsize=(14, 6), sharey=True)
-    fig.suptitle("Win Probability Sensitivity: Strong vs Weak Feature\n(Holding all other features at their mean)", fontsize=18, fontweight='bold', y=1.05)
+    fig.suptitle("Win Probability Sensitivity: Strong vs Weak Feature\n(Holding all other features at their mean)", fontsize=36, fontweight='bold', y=1.05)
     
     for i, feat in enumerate(feats_to_plot):
         ax = axes[i]
@@ -41,12 +54,12 @@ def main():
         preds = win_model.predict(X_sweep_s, verbose=0).flatten()
         
         ax.plot(sweep, preds, color=colors[i], lw=4)
-        ax.set_title(titles[i], fontsize=16, pad=15)
-        ax.set_xlabel(f"{feat} (5th to 95th Percentile)", fontsize=14)
+        ax.set_title(titles[i], fontsize=32, pad=15)
+        ax.set_xlabel(f"{feat} (5th to 95th Percentile)", fontsize=28)
         if i == 0:
-            ax.set_ylabel('Predicted Win Probability', fontsize=14)
+            ax.set_ylabel('Predicted Win Probability', fontsize=28)
             
-        ax.tick_params(axis='both', which='major', labelsize=12)
+        ax.tick_params(axis='both', which='major', labelsize=24)
         ax.grid(True, alpha=0.4, linestyle='--')
         
     plt.tight_layout()

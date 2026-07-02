@@ -1,0 +1,128 @@
+\documentclass[a4paper,twoside]{article}
+
+\usepackage{epsfig}
+\usepackage{subcaption}
+\usepackage{calc}
+\usepackage{amssymb}
+\usepackage{amstext}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{multicol}
+\usepackage{pslatex}
+\usepackage{apalike}
+\usepackage{algorithm2e}
+\usepackage[bottom]{footmisc}
+\usepackage{SCITEPRESS}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{multirow}
+
+\begin{document}
+
+\title{Fault Analysis of 2026 World Cup First-Round Match Predictions}
+
+\keywords{Football Prediction, Neural Networks, World Cup 2026, Outlier Analysis, Classification Faults.}
+
+\abstract{Following the development of neural network models trained on the 2018 and 2022 FIFA World Cup tournaments, we evaluated their predictive performance against the newly gathered, ground-truth results of the 2026 World Cup first round (72 matches). The 2026 tournament introduced an expanded 48-team format, significantly widening the skill disparities between competing nations and stretching the bounds of our models' training distribution. This report documents the degradation in overall accuracy (59.7\% when penalising draws) and the surge in Mean Absolute Error (MAE = 2.01) relative to historic baselines. We systematically decompose these faults, demonstrating that the binary classification paradigm structurally fails in a draw-heavy dataset, whilst the regression model heavily overestimates goal margins in extreme mismatch scenarios. Removing draws reveals a much stronger underlying accuracy of 82.7\% on decisive outcomes. We present a detailed examination of the most severe predictive outliers, quantifying the limitations of applying historical regression frameworks to novel tournament structures.}
+
+\onecolumn \maketitle \normalsize \setcounter{footnote}{0} \vfill
+
+% =====================================================================
+%  1. INTRODUCTION & OVERVIEW
+% =====================================================================
+\section{\uppercase{Introduction \& Overview}}
+\label{sec:introduction}
+
+\noindent
+The transition from a 32-team format in 2022 to a 48-team format in the 2026 FIFA World Cup represents a fundamental shift in international football's competitive landscape, compounding the existing challenges of tournament structural integrity and match competitiveness explored by Guyon \cite{guyon2020risk}. By introducing a larger cohort of lower-tier teams, the variance in team quality -- quantified via Elo ratings, squad market values, and historical xG profiles -- increased substantially.
+
+Our previously trained prediction models, highly optimised for the tighter competitive groupings of 2018 and 2022, were deployed to predict the outcomes and goal margins of all 72 first-round matches. Upon retrieving the ground-truth actuals, we observed a marked drop in overall predictive metrics: a strict win accuracy of 59.7\%, alongside a Mean Absolute Error (MAE) of 2.015 and Root Mean Squared Error (RMSE) of 2.676 goals.
+
+This report conducts a fault analysis to identify the root causes of these prediction errors. We categorise the faults into two primary domains: (i) architectural limitations regarding three-way outcomes (the ``Draw Penalty''), and (ii) scaling distortions in the score-margin regressor when confronted with unprecedented skill disparities.
+
+% =====================================================================
+%  2. BINARY CLASSIFICATION & THE DRAW PENALTY
+% =====================================================================
+\section{\uppercase{The Draw Penalty}}
+\label{sec:draws}
+
+\noindent
+The first major driver of degraded performance stems from the structural formulation of our classifier. Designed as a binary model, it exclusively predicts a ``Team 1 Win'' or a ``Team 2 Win''. In the 2018 and 2022 datasets, this design choice was acceptable due to a relatively low prevalence of draws, and binary outcomes were highly decisive.
+
+However, in the 2026 first round, 20 out of the 72 matches (27.7\%) ended in a draw. Because the model lacks a tertiary ``Draw'' output class, every drawn match is mathematically guaranteed to be classified as a fault. When evaluating the model \textit{strictly} (treating draws as failures), the accuracy sits at a modest 59.7\%.
+
+When we filter out the 20 drawn matches and isolate the model's performance purely on decisive outcomes (where one team actually won), the accuracy surges back to \textbf{82.7\%}. This figure is heavily aligned with our historical in-sample accuracies of $\approx$86-87\%, proving that the underlying feature representation of the model remains robust. The core fault lies in the architectural inability to allocate probability mass to a tied outcome.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\linewidth]{../fifth_pass/final_models/accuracy_bar.png}
+  \caption{Win Prediction Accuracy. The strict metric (With Ties) penalises the binary classifier heavily, whilst the subset of matches with a decisive winner (Excluding Ties) retains a strong 82.7\% accuracy.}
+  \label{fig:accuracy}
+\end{figure}
+
+% =====================================================================
+%  3. OUTLIER ANALYSIS & MARGIN EXAGGERATION
+% =====================================================================
+\section{\uppercase{Margin Exaggeration \& Outliers}}
+\label{sec:outliers}
+
+\noindent
+The second major fault lies within the score-margin regression model, which produced a severe MAE of 2.015 goals. This error rate is vastly inflated by a small subset of matches representing massive upsets or heavily fortified defensive performances against top-tier teams.
+
+The 48-team format inherently pairs historically dominant teams (e.g., Germany, Spain) with emerging nations (e.g., Curacao, Cabo Verde). The regression model, extrapolating from the smaller differentials seen in 2018/2022, aggressively over-scaled its predictions, occasionally forecasting blowout margins of 6, 7, or even 8 goals. 
+
+While international football does occasionally produce such scorelines, the inherent aleatoric randomness of the sport \cite{boshnakov2017bivariate}, coupled with conservative tactical pacing by dominant teams (often playing out a comfortable 2-0 win rather than pushing for 7-0), meant the actual goal margins were far narrower than the model's unconstrained linear extrapolations.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\linewidth]{../fifth_pass/final_models/margin_scatter.png}
+  \caption{Predicted vs Actual Goal Margin. The blue scatter indicates general correlation, while the red crosses denote massive outliers caused by the model's tendency to predict mathematically excessive margins in mismatch scenarios.}
+  \label{fig:scatter}
+\end{figure}
+
+\subsection{Top 5 Predictive Outliers}
+Table~\ref{tab:outliers} isolates the five matches that induced the greatest absolute error. These cases demonstrate the upper bounds of the fault:
+
+\begin{table}[H]
+\centering
+\caption{Top 5 Matches with Maximum Absolute Error between Predicted and Actual Goal Margins.}
+\label{tab:outliers}
+\small
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{l l c c c}
+\toprule
+\textbf{Matchup} & \textbf{Actual Result} & \textbf{Actual Margin} & \textbf{Predicted Adv.} & \textbf{Absolute Error} \\
+\midrule
+Ecuador vs Germany & Ecuador Win (2-1) & +1 & -7.55 (Germany) & \textbf{8.55} \\
+Qatar vs Switzerland & Draw (1-1) & 0 & -8.01 (Switzerland) & \textbf{8.01} \\
+Spain vs Cabo Verde & Draw (0-0) & 0 & +6.31 (Spain) & \textbf{6.31} \\
+Curacao vs Cote d'Ivoire & Cote d'Ivoire Win (0-2) & -2 & -7.50 (Cote d'Ivoire) & \textbf{5.50} \\
+South Africa vs Korea Republic & South Africa Win (1-0) & +1 & -3.95 (Korea Rep) & \textbf{4.95} \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\noindent
+\textbf{1. The Historic Upset (Ecuador vs Germany):}
+The single largest failure of the dataset was Ecuador's 2-1 victory over Germany. The model, heavily weighting Germany's massive advantage in Elo, squad market value, and xG, predicted a dominant 7.5-goal margin for Germany. Ecuador's victory defied these metrics entirely, resulting in an unprecedented 8.55 goal error.
+
+\textbf{2. Defensive Resilience (Spain vs Cabo Verde):}
+The model projected a comfortable 6-goal victory for Spain against Cabo Verde. However, the match concluded in a 0-0 draw. This highlights a critical limitation in our feature set: it fails to account for ``low-block'' defensive tactics where an inferior team sacrifices all attacking intent to secure a scoreless draw.
+
+\textbf{3. Magnitude Scaling (Curacao vs Cote d'Ivoire):}
+In this match, the model correctly identified Cote d'Ivoire as the victor but vastly overestimated the scoreline, predicting a 7.5-goal blowout. The actual match ended as a standard 2-0 victory. This confirms that while the directional signal remains sound, the regression model's scaling mechanism breaks down beyond margins of $\approx$3 goals.
+
+% =====================================================================
+%  4. CONCLUSION
+% =====================================================================
+\section{\uppercase{Conclusion}}
+\label{sec:conclusion}
+
+\noindent
+The 2026 World Cup data serves as a vital stress test for sports prediction architectures. Our fault analysis reveals that while the core feature representation correctly sorts decisive winners 82.7\% of the time, the application of binary classifiers and unbounded regression models is insufficient for tournaments with heavy skill disparities. 
+
+Future iterations of this system must transition to a tertiary classification architecture (Win/Draw/Loss) to account for defensive stalemates, as advocated by Constantinou et al.\ \cite{constantinou2012pi}, and the regression model must be constrained---potentially via non-linear capping or bivariate Poisson distribution modelling \cite{karlis2003analysis}---to prevent the mathematical exaggeration of goal margins.
+
+\end{document}

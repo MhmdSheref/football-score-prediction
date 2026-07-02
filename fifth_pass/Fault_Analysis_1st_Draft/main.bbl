@@ -1,0 +1,73 @@
+\begin{thebibliography}{}
+
+\bibitem[Anzer and Bauer, ]{anzer_goal_2021}
+Anzer, G. and Bauer, P.
+\newblock A goal scoring probability model for shots based on synchronized
+  positional and event data in football (soccer).
+\newblock 3:624475.
+
+\bibitem[Carmo et~al., ]{carmo_physical_2026}
+Carmo, A. A.~L., Souza-Junior, R. C.~S., Ferretti, P. H.~S., Gontijo, L.~A.,
+  Prado, L.~S., Teixeira-Coelho, F., Prímola-Gomes, T.~N., Mündel, T.,
+  Bitencourt, D.~P., Torres-Pinto, R.~A., and Wanner, S.~P.
+\newblock Physical performance in elite male soccer under extreme heat: A case
+  study of the 2025 {FIFA} club world cup.
+\newblock 13(1):71--87.
+
+\bibitem[Forcher et~al., ]{forcher_ai_2025}
+Forcher, L., Forcher, L., Woll, A., and Altmann, S.
+\newblock {AI} in bundesliga match analysis—expected possession value ({EPV})
+  vs. expected goals ({xG}) to predict match outcomes in soccer.
+\newblock 7:1713852.
+
+\bibitem[Hewitt and Karakuş, ]{hewitt_machine_2023}
+Hewitt, J.~H. and Karakuş, O.
+\newblock A machine learning approach for player and position adjusted expected
+  goals in football (soccer).
+\newblock 4:100034.
+
+\bibitem[Hundman et~al., 2018]{hundman_detecting_2018}
+Hundman, K., Constantinou, V., Laporte, C., Colwell, I., and Soderstrom, T.
+  (2018).
+\newblock Detecting spacecraft anomalies using lstms and nonparametric dynamic
+  thresholding.
+\newblock In {\em Proceedings of the 24th ACM SIGKDD international conference
+  on knowledge discovery \& data mining}, pages 387--395.
+
+\bibitem[Mead et~al., ]{mead_expected_2023}
+Mead, J., O’Hare, A., and {McMenemy}, P.
+\newblock Expected goals in football: Improving model performance and
+  demonstrating value.
+\newblock 18(4):e0282295.
+
+\bibitem[Mohr et~al., ]{mohr_physiological_2012}
+Mohr, M., Nybo, L., Grantham, J., and Racinais, S.
+\newblock Physiological responses and physical performance during football in
+  the heat.
+\newblock 7(6):e39202.
+
+\bibitem[Pitso et~al., ]{pitso_bayesian_2026}
+Pitso, S.~D., Michael, T., and Mosia, M.
+\newblock Bayesian outcome-specific ensemble modeling for football outcome
+  prediction.
+\newblock 12:1754408.
+
+\bibitem[Shephard, ]{shephard_altitude_2008}
+Shephard, R.
+\newblock Altitude and athletic performance: statistical analysis using
+  football results.
+\newblock 2008:233--234.
+
+\bibitem[Spearman, 2018]{spearman2018beyond}
+Spearman, W. (2018).
+\newblock Beyond expected goals.
+\newblock In {\em Proceedings of the 12th MIT sloan sports analytics
+  conference}, pages 1--17.
+
+\bibitem[Tsokos et~al., ]{tsokos_modeling_2019}
+Tsokos, A., Narayanan, S., Kosmidis, I., Baio, G., Cucuringu, M., Whitaker, G.,
+  and Király, F.
+\newblock Modeling outcomes of soccer matches.
+\newblock 108(1):77--95.
+
+\end{thebibliography}

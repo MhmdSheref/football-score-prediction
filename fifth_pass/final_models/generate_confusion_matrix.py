@@ -1,14 +1,27 @@
 import os
 import numpy as np
+
 import matplotlib.pyplot as plt
+
 import seaborn as sns
 import tensorflow as tf
 import pickle
 from sklearn.metrics import confusion_matrix
 from generate_requested_graphs import load_data
 
+
+plt.rcParams.update({
+    'font.size': 20,
+    'axes.titlesize': 28,
+    'axes.labelsize': 24,
+    'xtick.labelsize': 20,
+    'ytick.labelsize': 20,
+    'legend.fontsize': 20,
+    'figure.titlesize': 32
+})
+
 def main():
-    out_dir = '../report'
+    out_dir = '../report/2x'
     os.makedirs(out_dir, exist_ok=True)
     
     # Load the dataset (2018 and 2022 matches augmented)
@@ -45,7 +58,7 @@ def main():
     
     # Plotting
     fig, axes = plt.subplots(1, 2, figsize=(14, 6))
-    fig.suptitle('Model Confusion Matrices (Test/Evaluation Set)', fontsize=18, fontweight='bold', y=1.05)
+    fig.suptitle('Model Confusion Matrices (Test/Evaluation Set)', fontsize=36, fontweight='bold', y=1.05)
     
     # Function to plot a single CM
     def plot_cm(ax, cm, title):
@@ -58,13 +71,13 @@ def main():
         labels = np.asarray(labels).reshape(2,2)
         
         sns.heatmap(cm, annot=labels, fmt='', cmap='Blues', ax=ax, cbar=False, 
-                    annot_kws={'size': 12}, square=True, linewidths=1, linecolor='black')
+                    annot_kws={'size': 24}, square=True, linewidths=1, linecolor='black')
         
-        ax.set_title(title, fontsize=16, pad=15)
-        ax.set_xlabel('Predicted Label', fontsize=14)
-        ax.set_ylabel('True Label', fontsize=14)
-        ax.xaxis.set_ticklabels(['Loss / Draw', 'Win'], fontsize=12)
-        ax.yaxis.set_ticklabels(['Loss / Draw', 'Win'], fontsize=12)
+        ax.set_title(title, fontsize=32, pad=15)
+        ax.set_xlabel('Predicted Label', fontsize=28)
+        ax.set_ylabel('True Label', fontsize=28)
+        ax.xaxis.set_ticklabels(['Loss / Draw', 'Win'], fontsize=24)
+        ax.yaxis.set_ticklabels(['Loss / Draw', 'Win'], fontsize=24)
         
     plot_cm(axes[0], cm_win, 'Win Probability Model')
     plot_cm(axes[1], cm_score, 'Score Difference Model\n(Advantage > 0 = Win)')
